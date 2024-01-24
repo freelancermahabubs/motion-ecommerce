@@ -1,0 +1,79 @@
+{
+  "newArrivals": [
+    {
+      "id": 1,
+     "name": "Haylou Watch 2 Pro BT Calling Smart Watch",
+      "price": "৳ 3,150",
+      "rating": 5.0,
+      "images": [
+        "image/productDetails/img1.webp",
+        "image/productDetails/img3.webp",
+        "image/productDetails/img4.webp",
+        "image/productDetails/img5.webp",
+        "image/productDetails/img6.webp",
+        "image/productDetails/img7.webp"
+      ],
+      "description": [
+        "Battery capacity: 280mAh",
+        "BT calling",
+        "Bangla Support",
+        "IP68 dustproof and waterproof",
+        "100 workout modes",
+        "Remote camera control",
+        "1.85” inch TFT HD Display",
+        "Resolution: 240 x 284px",
+        "Bluetooth connection: Bluetooth V5.3",
+        "Dimensions: 49*38*11 mm",
+        "Battery capacity: 280mAh"
+      ],
+      "warranty": {
+        "duration": "6 Months",
+        "type": "Brand Warranty",
+        "info": "One Time Replacement In Warranty Period.",
+        "details": "warranty.html"
+      },
+      "socialIcons": [
+        "facebook",
+        "twitter",
+        "messenger",
+        "whatsapp"
+      ],
+    },
+    {
+      "id": 2,
+      "name": "Amazfit Balance BT Calling Smart Watch with Dual-band GPS",
+      "image": "image/NewArrivalProduct/img2webp.webp",
+      "price": 2150,
+      "rating": 5,
+      "favorites": 0,
+      "cart": 0
+    },
+    {
+      "id": 3,
+      "name": "Mibro GS Pro Calling Smart Watch with 5ATM",
+      "image": "image/NewArrivalProduct/img3webp.webp",
+      "price": 5150,
+      "rating": 5,
+      "favorites": 0,
+      "cart": 0
+    },
+    {
+      "id": 4,
+      "name": "Imiki SF1 Smart Watch (Bluetooth Calling)",
+      "image": "image/NewArrivalProduct/img4webp.webp",
+      "price": 6150,
+      "rating": 5,
+      "favorites": 0,
+      "cart": 0
+    },
+    {
+      "id": 5,
+      "name": "Kieslect Ks2 Calling Smart Watch",
+      "image": "image/NewArrivalProduct/img5webp.webp",
+      "price": 1150,
+      "rating": 5,
+      "favorites": 0,
+      "cart": 0
+    }
+  ]
+}
