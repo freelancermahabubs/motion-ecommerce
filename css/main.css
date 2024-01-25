@@ -105,3 +105,29 @@ body {
 .active-tab-color:not(:first-child) {
   color: var(--primary-color);
 }
+
+/* FAQs start  */
+.faq-container {
+  max-width: 800px;
+  margin: 20px auto;
+  background-color: #fff;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  padding: 20px;
+}
+
+.faq-item {
+  margin-bottom: 20px;
+}
+
+.faq-question {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  cursor: pointer;
+}
+
+.faq-answer {
+  margin-top: 10px;
+  display: none;
+}
