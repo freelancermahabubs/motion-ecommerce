@@ -1,0 +1,600 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Retailer Request | Motion view</title>
+    <!-- Tailwind css link  -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;900&display=swap"
+      rel="stylesheet"
+    />
+    <!-- icon link  -->
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+    <!-- ===== slick slider link ===== -->
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"
+    />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css"
+    />
+    <link rel="stylesheet" href="css/main.css" />
+  </head>
+  <body>
+    <div class="container">
+      <form class="bg-white rounded-2xl shadow-2xl p-6 my-40">
+        <h1 class="text-lg text-[#132339] font-semibold">
+          Retailer Request Form
+        </h1>
+        <div
+          class="p-4 border border-blue-300 mt-10 rounded-lg shadow-lg space-y-5"
+        >
+          <div class="flex space-x-4">
+            <div class="w-1/4">
+              <label class="block mb-2 text-sm font-semibold text-gray-900"
+                >Store Name <span class="text-red-500">*</span></label
+              ><input
+                name="storeName"
+                placeholder="Type Store name"
+                type="text"
+                class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg block w-full p-2.5"
+                value=""
+              />
+            </div>
+            <div class="w-1/4">
+              <label class="block mb-2 text-sm font-semibold text-gray-900"
+                >Client Name <span class="text-red-500">*</span></label
+              ><input
+                name="clientName"
+                placeholder="Type client name"
+                type="text"
+                class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg block w-full p-2.5"
+                value=""
+              />
+            </div>
+            <div class="w-1/4">
+              <label class="block mb-2 text-sm font-semibold text-gray-900"
+                >Personal Phone No <span class="text-red-500">*</span></label
+              ><input
+                name="personalNo"
+                placeholder="Ex: 01925460460"
+                type="number"
+                class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg block w-full p-2.5"
+                value=""
+              />
+            </div>
+            <div class="w-1/4">
+              <label class="block mb-2 text-sm font-semibold text-gray-900"
+                >Manager Phone no </label
+              ><input
+                placeholder="Ex: 01925460460"
+                type="text"
+                class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg block w-full p-2.5"
+                value=""
+              />
+            </div>
+          </div>
+
+          <div class="flex space-x-4">
+            <div class="w-1/4">
+              <label class="block mb-2 text-sm font-semibold text-gray-900"
+                >Division <span class="text-red-500">*</span></label
+              >
+              <select
+                id="countries"
+                class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
+              >
+                <option selected>Choose a country</option>
+                <option value="US">United States</option>
+                <option value="CA">Canada</option>
+                <option value="FR">France</option>
+                <option value="DE">Germany</option>
+              </select>
+            </div>
+            <div class="w-1/4">
+              <label class="block mb-2 text-sm font-semibold text-gray-900"
+                >District <span class="text-red-500">*</span></label
+              >
+              <div class="css-b62m3t-container">
+                <span
+                  id="react-select-9-live-region"
+                  class="css-7pg0cj-a11yText"
+                ></span
+                ><span
+                  aria-live="polite"
+                  aria-atomic="false"
+                  aria-relevant="additions text"
+                  role="log"
+                  class="css-7pg0cj-a11yText"
+                ></span>
+                <div class="css-1admqzn-control">
+                  <div class="css-hlgwow">
+                    <div
+                      class="css-1jqq78o-placeholder"
+                      id="react-select-9-placeholder"
+                    >
+                      Select District
+                    </div>
+                    <div class="css-19bb58m" data-value="">
+                      <input
+                        class=""
+                        style="
+                          color: inherit;
+                          background: 0px center;
+                          opacity: 1;
+                          width: 100%;
+                          grid-area: 1 / 2;
+                          font: inherit;
+                          min-width: 2px;
+                          border: 0px;
+                          margin: 0px;
+                          outline: 0px;
+                          padding: 0px;
+                        "
+                        autocapitalize="none"
+                        autocomplete="off"
+                        autocorrect="off"
+                        id="react-select-9-input"
+                        spellcheck="false"
+                        tabindex="0"
+                        type="text"
+                        aria-autocomplete="list"
+                        aria-expanded="false"
+                        aria-haspopup="true"
+                        role="combobox"
+                        aria-activedescendant=""
+                        aria-describedby="react-select-9-placeholder"
+                        value=""
+                      />
+                    </div>
+                  </div>
+                  <div class="css-1wy0on6">
+                    <span class="css-1u9des2-indicatorSeparator"></span>
+                    <div
+                      class="css-1xc3v61-indicatorContainer"
+                      aria-hidden="true"
+                    >
+                      <svg
+                        height="20"
+                        width="20"
+                        viewBox="0 0 20 20"
+                        aria-hidden="true"
+                        focusable="false"
+                        class="css-8mmkcg"
+                      >
+                        <path
+                          d="M4.516 7.548c0.436-0.446 1.043-0.481 1.576 0l3.908 3.747 3.908-3.747c0.533-0.481 1.141-0.446 1.574 0 0.436 0.445 0.408 1.197 0 1.615-0.406 0.418-4.695 4.502-4.695 4.502-0.217 0.223-0.502 0.335-0.787 0.335s-0.57-0.112-0.789-0.335c0 0-4.287-4.084-4.695-4.502s-0.436-1.17 0-1.615z"
+                        ></path>
+                      </svg>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="w-1/4">
+              <label class="block mb-2 text-sm font-semibold text-gray-900"
+                >Thana <span class="text-red-500">*</span></label
+              >
+              <div class="css-b62m3t-container">
+                <span
+                  id="react-select-10-live-region"
+                  class="css-7pg0cj-a11yText"
+                ></span
+                ><span
+                  aria-live="polite"
+                  aria-atomic="false"
+                  aria-relevant="additions text"
+                  role="log"
+                  class="css-7pg0cj-a11yText"
+                ></span>
+                <div class="css-1admqzn-control">
+                  <div class="css-hlgwow">
+                    <div
+                      class="css-1jqq78o-placeholder"
+                      id="react-select-10-placeholder"
+                    >
+                      Select Thana
+                    </div>
+                    <div class="css-19bb58m" data-value="">
+                      <input
+                        class=""
+                        style="
+                          color: inherit;
+                          background: 0px center;
+                          opacity: 1;
+                          width: 100%;
+                          grid-area: 1 / 2;
+                          font: inherit;
+                          min-width: 2px;
+                          border: 0px;
+                          margin: 0px;
+                          outline: 0px;
+                          padding: 0px;
+                        "
+                        autocapitalize="none"
+                        autocomplete="off"
+                        autocorrect="off"
+                        id="react-select-10-input"
+                        spellcheck="false"
+                        tabindex="0"
+                        type="text"
+                        aria-autocomplete="list"
+                        aria-expanded="false"
+                        aria-haspopup="true"
+                        role="combobox"
+                        aria-activedescendant=""
+                        aria-describedby="react-select-10-placeholder"
+                        value=""
+                      />
+                    </div>
+                  </div>
+                  <div class="css-1wy0on6">
+                    <span class="css-1u9des2-indicatorSeparator"></span>
+                    <div
+                      class="css-1xc3v61-indicatorContainer"
+                      aria-hidden="true"
+                    >
+                      <svg
+                        height="20"
+                        width="20"
+                        viewBox="0 0 20 20"
+                        aria-hidden="true"
+                        focusable="false"
+                        class="css-8mmkcg"
+                      >
+                        <path
+                          d="M4.516 7.548c0.436-0.446 1.043-0.481 1.576 0l3.908 3.747 3.908-3.747c0.533-0.481 1.141-0.446 1.574 0 0.436 0.445 0.408 1.197 0 1.615-0.406 0.418-4.695 4.502-4.695 4.502-0.217 0.223-0.502 0.335-0.787 0.335s-0.57-0.112-0.789-0.335c0 0-4.287-4.084-4.695-4.502s-0.436-1.17 0-1.615z"
+                        ></path>
+                      </svg>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="w-1/4">
+              <label class="block mb-2 text-sm font-semibold text-gray-900"
+                >Address <span class="text-red-500">*</span></label
+              ><input
+                name="address"
+                placeholder="Type Address"
+                type="text"
+                class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg block w-full p-2.5"
+                value=""
+              />
+            </div>
+          </div>
+          <div>
+            <label class="block mb-2 text-sm font-semibold text-gray-900"
+              >Core Business <span class="text-red-500">*</span></label
+            >
+            <fieldset
+              class="w-3/5 flex flex-col md:flex-row md:space-x-3 md:border-2 border-[#D9D9D9] rounded-md px-6 py-2 mt-3"
+            >
+              <label
+                ><input class="mr-2" type="radio" value="Smart Phone" />Smart
+                Phone</label
+              ><label
+                ><input
+                  class="mr-2"
+                  type="radio"
+                  value="Gadgets"
+                />Gadgets</label
+              ><label
+                ><input
+                  class="mr-2"
+                  type="radio"
+                  value="Television"
+                />Television</label
+              ><label
+                ><input
+                  class="mr-2"
+                  type="radio"
+                  value="Computer &amp; IT"
+                />Computer &amp; IT</label
+              >
+            </fieldset>
+          </div>
+        </div>
+        <div
+          class="p-4 border border-blue-300 mt-10 rounded-lg shadow-lg space-y-5 my-5 null"
+        >
+          <div class="flex justify-between items-center">
+            <h6 class="text-sm font-bold">Delivery Details</h6>
+            <div class="flex justify-center items-center">
+              <input
+                class="w-4 h-4 text-blue-600 bg-gray-100 rounded border-gray-300 focus:ring-blue-500 focus:ring-2"
+                type="checkbox"
+              /><label class="ml-2 text-xs font-semibold"
+                >Same as previous address</label
+              >
+            </div>
+          </div>
+          <div class="flex space-x-4">
+            <div class="w-1/4">
+              <label class="block mb-2 text-sm font-semibold text-gray-900"
+                >Division <span class="text-red-500">*</span></label
+              >
+              <div class="css-b62m3t-container">
+                <span
+                  id="react-select-11-live-region"
+                  class="css-7pg0cj-a11yText"
+                ></span
+                ><span
+                  aria-live="polite"
+                  aria-atomic="false"
+                  aria-relevant="additions text"
+                  role="log"
+                  class="css-7pg0cj-a11yText"
+                ></span>
+                <div class="css-1admqzn-control">
+                  <div class="css-hlgwow">
+                    <div
+                      class="css-1jqq78o-placeholder"
+                      id="react-select-11-placeholder"
+                    >
+                      Select Division
+                    </div>
+                    <div class="css-19bb58m" data-value="">
+                      <input
+                        class=""
+                        style="
+                          color: inherit;
+                          background: 0px center;
+                          opacity: 1;
+                          width: 100%;
+                          grid-area: 1 / 2;
+                          font: inherit;
+                          min-width: 2px;
+                          border: 0px;
+                          margin: 0px;
+                          outline: 0px;
+                          padding: 0px;
+                        "
+                        autocapitalize="none"
+                        autocomplete="off"
+                        autocorrect="off"
+                        id="react-select-11-input"
+                        spellcheck="false"
+                        tabindex="0"
+                        type="text"
+                        aria-autocomplete="list"
+                        aria-expanded="false"
+                        aria-haspopup="true"
+                        role="combobox"
+                        aria-activedescendant=""
+                        aria-describedby="react-select-11-placeholder"
+                        value=""
+                      />
+                    </div>
+                  </div>
+                  <div class="css-1wy0on6">
+                    <span class="css-1u9des2-indicatorSeparator"></span>
+                    <div
+                      class="css-1xc3v61-indicatorContainer"
+                      aria-hidden="true"
+                    >
+                      <svg
+                        height="20"
+                        width="20"
+                        viewBox="0 0 20 20"
+                        aria-hidden="true"
+                        focusable="false"
+                        class="css-8mmkcg"
+                      >
+                        <path
+                          d="M4.516 7.548c0.436-0.446 1.043-0.481 1.576 0l3.908 3.747 3.908-3.747c0.533-0.481 1.141-0.446 1.574 0 0.436 0.445 0.408 1.197 0 1.615-0.406 0.418-4.695 4.502-4.695 4.502-0.217 0.223-0.502 0.335-0.787 0.335s-0.57-0.112-0.789-0.335c0 0-4.287-4.084-4.695-4.502s-0.436-1.17 0-1.615z"
+                        ></path>
+                      </svg>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="w-1/4">
+              <label class="block mb-2 text-sm font-semibold text-gray-900"
+                >District <span class="text-red-500">*</span></label
+              >
+              <div class="css-b62m3t-container">
+                <span
+                  id="react-select-12-live-region"
+                  class="css-7pg0cj-a11yText"
+                ></span
+                ><span
+                  aria-live="polite"
+                  aria-atomic="false"
+                  aria-relevant="additions text"
+                  role="log"
+                  class="css-7pg0cj-a11yText"
+                ></span>
+                <div class="css-1admqzn-control">
+                  <div class="css-hlgwow">
+                    <div
+                      class="css-1jqq78o-placeholder"
+                      id="react-select-12-placeholder"
+                    >
+                      Select District
+                    </div>
+                    <div class="css-19bb58m" data-value="">
+                      <input
+                        class=""
+                        style="
+                          color: inherit;
+                          background: 0px center;
+                          opacity: 1;
+                          width: 100%;
+                          grid-area: 1 / 2;
+                          font: inherit;
+                          min-width: 2px;
+                          border: 0px;
+                          margin: 0px;
+                          outline: 0px;
+                          padding: 0px;
+                        "
+                        autocapitalize="none"
+                        autocomplete="off"
+                        autocorrect="off"
+                        id="react-select-12-input"
+                        spellcheck="false"
+                        tabindex="0"
+                        type="text"
+                        aria-autocomplete="list"
+                        aria-expanded="false"
+                        aria-haspopup="true"
+                        role="combobox"
+                        aria-activedescendant=""
+                        aria-describedby="react-select-12-placeholder"
+                        value=""
+                      />
+                    </div>
+                  </div>
+                  <div class="css-1wy0on6">
+                    <span class="css-1u9des2-indicatorSeparator"></span>
+                    <div
+                      class="css-1xc3v61-indicatorContainer"
+                      aria-hidden="true"
+                    >
+                      <svg
+                        height="20"
+                        width="20"
+                        viewBox="0 0 20 20"
+                        aria-hidden="true"
+                        focusable="false"
+                        class="css-8mmkcg"
+                      >
+                        <path
+                          d="M4.516 7.548c0.436-0.446 1.043-0.481 1.576 0l3.908 3.747 3.908-3.747c0.533-0.481 1.141-0.446 1.574 0 0.436 0.445 0.408 1.197 0 1.615-0.406 0.418-4.695 4.502-4.695 4.502-0.217 0.223-0.502 0.335-0.787 0.335s-0.57-0.112-0.789-0.335c0 0-4.287-4.084-4.695-4.502s-0.436-1.17 0-1.615z"
+                        ></path>
+                      </svg>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="w-1/4">
+              <label class="block mb-2 text-sm font-semibold text-gray-900"
+                >Thana <span class="text-red-500">*</span></label
+              >
+              <div class="css-b62m3t-container">
+                <span
+                  id="react-select-13-live-region"
+                  class="css-7pg0cj-a11yText"
+                ></span
+                ><span
+                  aria-live="polite"
+                  aria-atomic="false"
+                  aria-relevant="additions text"
+                  role="log"
+                  class="css-7pg0cj-a11yText"
+                ></span>
+                <div class="css-1admqzn-control">
+                  <div class="css-hlgwow">
+                    <div
+                      class="css-1jqq78o-placeholder"
+                      id="react-select-13-placeholder"
+                    >
+                      Select Thana
+                    </div>
+                    <div class="css-19bb58m" data-value="">
+                      <input
+                        class=""
+                        style="
+                          color: inherit;
+                          background: 0px center;
+                          opacity: 1;
+                          width: 100%;
+                          grid-area: 1 / 2;
+                          font: inherit;
+                          min-width: 2px;
+                          border: 0px;
+                          margin: 0px;
+                          outline: 0px;
+                          padding: 0px;
+                        "
+                        autocapitalize="none"
+                        autocomplete="off"
+                        autocorrect="off"
+                        id="react-select-13-input"
+                        spellcheck="false"
+                        tabindex="0"
+                        type="text"
+                        aria-autocomplete="list"
+                        aria-expanded="false"
+                        aria-haspopup="true"
+                        role="combobox"
+                        aria-activedescendant=""
+                        aria-describedby="react-select-13-placeholder"
+                        value=""
+                      />
+                    </div>
+                  </div>
+                  <div class="css-1wy0on6">
+                    <span class="css-1u9des2-indicatorSeparator"></span>
+                    <div
+                      class="css-1xc3v61-indicatorContainer"
+                      aria-hidden="true"
+                    >
+                      <svg
+                        height="20"
+                        width="20"
+                        viewBox="0 0 20 20"
+                        aria-hidden="true"
+                        focusable="false"
+                        class="css-8mmkcg"
+                      >
+                        <path
+                          d="M4.516 7.548c0.436-0.446 1.043-0.481 1.576 0l3.908 3.747 3.908-3.747c0.533-0.481 1.141-0.446 1.574 0 0.436 0.445 0.408 1.197 0 1.615-0.406 0.418-4.695 4.502-4.695 4.502-0.217 0.223-0.502 0.335-0.787 0.335s-0.57-0.112-0.789-0.335c0 0-4.287-4.084-4.695-4.502s-0.436-1.17 0-1.615z"
+                        ></path>
+                      </svg>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="w-1/4">
+              <label class="block mb-2 text-sm font-semibold text-gray-900"
+                >Address <span class="text-red-500">*</span></label
+              ><input
+                name="deliveryAddress"
+                class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg block w-full p-2.5 null"
+                placeholder="Type address here"
+                value=""
+              />
+            </div>
+          </div>
+          <div class="flex space-x-4">
+            <div class="w-1/4">
+              <label class="block mb-2 text-sm font-semibold text-gray-900"
+                >Phone No <span class="text-red-500">*</span></label
+              ><input
+                name="deliveryPhoneNo"
+                class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg block w-full p-2.5 null"
+                type="number"
+                placeholder="Ex:01925460460"
+                value=""
+              />
+            </div>
+          </div>
+        </div>
+        <div class="flex justify-center null">
+          <button type="button" class="hidden">Prev</button
+          ><button
+            class="bg-[#0047FF] rounded-md w-40 h-10 tracking-wider text-white"
+            type="submit"
+          >
+            Next
+          </button>
+        </div>
+      </form>
+    </div>
+
+    <script src="js/main.js"></script>
+  </body>
+</html>
