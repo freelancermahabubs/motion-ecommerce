@@ -86,3 +86,32 @@
 });
 
 
+
+// password hidden and open toggle code 
+// function togglePasswordVisibility() {
+//   var passwordInput = document.getElementById("passwordInput");
+//   var togglePasswordIcon = document.getElementById("togglePassword");
+
+//   if (passwordInput.type === "password") {
+//       passwordInput.type = "text";
+//       togglePasswordIcon.src = "/image/signUp/eye_show.svg";
+//   } else {
+//       passwordInput.type = "password";
+//       togglePasswordIcon.src = "/image/signUp/eye.svg";
+//   }
+// }
+
+
+
+function togglePasswordVisibility(inputId, toggleIconId) {
+  var passwordInput = document.getElementById(inputId);
+  var togglePasswordIcon = document.getElementById(toggleIconId);
+
+  if (passwordInput.type === "password") {
+      passwordInput.type = "text";
+      togglePasswordIcon.src = "/image/signUp/eye_show.svg";
+  } else {
+      passwordInput.type = "password";
+      togglePasswordIcon.src = "/image/signUp/eye.svg";
+  }
+}

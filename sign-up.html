@@ -29,7 +29,9 @@
     <link rel="stylesheet" href="css/main.css" />
   </head>
   <body>
-    <div class="bg-gradient-to-r from-[#FFF9F0] to-[#FFF9F0] h-screen relative">
+    <div
+      class="bg-gradient-to-r from-[#FFF9F0] to-[#FFF9F0] h-screen relative py-4"
+    >
       <div class="absolute top-0 right-10 z-0">
         <img src="image/signUp/top-draw.png" alt="paint draw" />
       </div>
@@ -48,25 +50,43 @@
                 /></div
             ></a>
             <div
-              class="bg-white w-96 signin rounded-3xl translate-x-0 xl:-translate-x-16 p-8 shadow-2xl lg:mt-0 lg:mb-0 mb-4 mt-4"
+              class="bg-white w-96 signin md:w-[25rem] rounded-3xl translate-x-0 xl:-translate-x-16 p-8 shadow-2xl"
             >
               <div class="">
                 <h2 class="text-xl font-semibold text-[#6B6B6B] text-left">
                   Every Purchase will be made with Pleasure
                 </h2>
                 <small class="text-gray-600 text-center"
-                  >Sign in to your Motion View account</small
+                  >Sign up to your Motion View account</small
                 >
                 <form>
                   <div class="mt-4">
-                    <label class="text-base font-medium block"
-                      >Email or Phone</label
-                    >
+                    <label class="text-base font-medium block">Full Name</label>
+                    <input
+                      name="name"
+                      class="focus:outline-none focus:shadow-outline border border-gray-300 rounded py-1.5 px-4 block w-full appearance-none"
+                      type="text"
+                      placeholder="Type your full name"
+                      id="name"
+                    />
+                  </div>
+                  <div class="mt-4">
+                    <label class="text-base font-medium block">Phone No</label>
+                    <input
+                      name="phone"
+                      class="focus:outline-none focus:shadow-outline border border-gray-300 rounded py-1.5 px-4 block w-full appearance-none"
+                      type="number"
+                      placeholder="Ex: 01xxxxxxxxx"
+                    />
+                  </div>
+                  <div class="mt-4">
+                    <label class="text-base font-medium block">Email</label>
                     <input
                       name="email"
                       class="focus:outline-none focus:shadow-outline border border-gray-300 rounded py-1.5 px-4 block w-full appearance-none"
-                      type="text"
-                      placeholder="Enter email or phone"
+                      type="email"
+                      placeholder="Ex: user@example.com"
+                      id="email_"
                     />
                   </div>
                   <div class="mt-4">
@@ -91,66 +111,46 @@
                         />
                       </div>
                     </div>
-                    <a href="reset-password.html">
-                      <div class="mt-2">
-                        <small class="text-purple-400">Forget Password?</small>
+                  </div>
+                  <div class="mt-4">
+                    <label class="text-base font-medium block"
+                      >Confirm Password</label
+                    >
+                    <div class="relative">
+                      <input
+                        name="c_password"
+                        id="password__"
+                        type="password"
+                        placeholder="Confirm password"
+                        class="focus:outline-none focus:shadow-outline border border-gray-300 rounded py-1.5 px-4 block w-full appearance-none"
+                      />
+                      <div
+                        class="absolute inset-y-0 right-0 pr-3 flex items-center text-sm leading-5"
+                      >
+                        <img
+                          class="cursor-pointer"
+                          src="image/signUp/eye.svg"
+                          alt="password show icon"
+                          id="toggleConfirmPassword"
+                          onclick="togglePasswordVisibility('password__', 'toggleConfirmPassword')"
+                        />
                       </div>
-                    </a>
+                    </div>
                   </div>
                   <div class="mt-4">
                     <button
                       type="submit"
-                      class="bg-orange text-white tracking-wider py-2 px-4 w-full rounded"
+                      class="bg-orange text-white font-medium tracking-wider py-2 px-4 w-full rounded block"
                     >
-                      SIGN IN
+                      SIGN UP
                     </button>
                   </div>
                 </form>
-                <div class="mt-4 flex items-center justify-between">
-                  <span class="border-b w-1/5 md:w-2/4"></span
-                  ><a href="#" class="text-xs text-[#BFBFBF] uppercase mx-2"
-                    >OR</a
-                  ><span class="border-b w-1/5 md:w-2/4"></span>
-                </div>
-                <div class="mt-4">
-                  <button
-                    type="button"
-                    class="w-full block bg-white hover:bg-gray-100 focus:bg-gray-100 text-gray-900 font-semibold rounded-lg px-4 py-2 border border-gray-300"
-                  >
-                    <div class="flex items-center justify-center">
-                      <div class="w-6 h-6">
-                        <img
-                          class="cursor-pointer"
-                          src="image/signUp/google.png"
-                          alt="google icon"
-                        />
-                      </div>
-                      <small class="ml-4">Continue with Google</small>
-                    </div>
-                  </button>
-                </div>
-                <div class="mt-4">
-                  <button
-                    type="button"
-                    class="w-full block bg-white hover:bg-gray-100 focus:bg-gray-100 text-gray-900 font-semibold rounded-lg px-4 py-2 border border-gray-300"
-                  >
-                    <div class="flex items-center justify-center">
-                      <div class="w-6 h-6">
-                        <img
-                          class="w-full h-full"
-                          src="image/signUp/facebook.png"
-                          alt="google icon"
-                        />
-                      </div>
-                      <small class="ml-4">Continue with Facebook</small>
-                    </div>
-                  </button>
-                </div>
                 <div class="mt-6 flex justify-center items-center">
                   <small class="text-center"
-                    >Don't have any account?
-                    <a href="sign-up.html"
-                      ><span class="text-blue-600 underline">Sign up</span></a
+                    >Have any account?
+                    <a href="signIn.html"
+                      ><span class="text-blue-600 underline">Sign in</span></a
                     ></small
                   >
                 </div>
