@@ -131,3 +131,50 @@ body {
   margin-top: 10px;
   display: none;
 }
+
+/* retailer-request start  */
+.hidden-div {
+  opacity: 1;
+  transition: opacity 0.3s ease;
+}
+
+.hidden-div.hidden {
+  opacity: 0;
+  pointer-events: none;
+}
+
+/* profile toggle active color set  */
+.submenu-link.active-link {
+  color: var(--primary-color);
+}
+
+.reviews-tab-button {
+  /* background-color: #ddd;
+  padding: 10px 15px;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+  margin-right: 5px;
+  transition: background-color 0.3s ease; */
+}
+
+.reviews-tab-button.active {
+  border-bottom: 3px solid var(--primary-color);
+  margin-top: 2px;
+  font-weight: 600;
+}
+
+/* .reviews-tab-button:hover {
+  background-color: #ccc;
+} */
+
+.reviews-tab-content {
+  display: none;
+  /* padding: 10px; */
+  /* border: 1px solid #ddd; */
+  /* border-radius: 5px; */
+}
+
+.reviews-tab-content.active {
+  display: block;
+}

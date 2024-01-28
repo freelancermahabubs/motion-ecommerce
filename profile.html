@@ -1,0 +1,806 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Retailer Request | Motion view</title>
+    <!-- Tailwind css link  -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;900&display=swap"
+      rel="stylesheet"
+    />
+    <!-- icon link  -->
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+    <!-- ===== slick slider link ===== -->
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"
+    />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css"
+    />
+    <link rel="stylesheet" href="css/main.css" />
+  </head>
+  <body>
+    <header
+      class="hidden lg:block bg-white inset-x-0 top-0 shadow-lg h-[8.5rem]"
+    >
+      <!-- Header top start  -->
+      <div class="flex flex-row justify-between items-center container py-2">
+        <div>
+          <h4 class="text-sm font-semibold">
+            Biggest Smart Gadget & SmartPhone Collection
+          </h4>
+        </div>
+        <div>
+          <ul
+            class="flex flex-row justify-center items-center text-sm cursor-pointer"
+          >
+            <li>
+              Call us
+              <span class="text-[#5F57E7] font-semibold">+8801925460460</span>
+              <span class="px-1">|</span>
+            </li>
+            <li>My Account <span class="px-1">|</span></li>
+            <li class="hover:text-[#F29120]">Retailer Request</li>
+          </ul>
+        </div>
+      </div>
+      <hr class="w-full border-1 border-gray-200" />
+      <!-- Navbar section start  -->
+      <div
+        class="container flex flex-row justify-between items-center mb-8 mt-6"
+      >
+        <div>
+          <img src="image/motionview-nav.webp" alt="" />
+        </div>
+        <div>
+          <i class="bx bx-menu"></i>
+        </div>
+        <!-- nav bar -->
+        <div>
+          <ul class="flex flex-row justify-center items-center gap-5">
+            <li><a href="#">Campaign</a></li>
+            <li><a href="#">Trending</a></li>
+            <li><a href="#">Brands</a></li>
+            <li><a href="#">Our Outlets</a></li>
+            <li><a href="#">Service Center</a></li>
+          </ul>
+        </div>
+        <div>
+          <input
+            class="rounded-full ring-0 focus:ring-0 py-2 px-1 outline-none placeholder-[#808080] pl-4"
+            type="text"
+            placeholder="Search for Product"
+            style="border: 1px solid #f29120"
+          />
+        </div>
+        <div>
+          <ul class="flex flex-row justify-center items-center gap-4">
+            <li>
+              <a href="#"><i class="bx bx-heart"></i></a>
+            </li>
+            <li>
+              <a href="#"><i class="bx bx-user"></i></a>
+            </li>
+            <li>
+              <a href="#"><i class="bx bx-cart"></i></a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </header>
+
+    <!-- ======== profile section start ========  -->
+    <div class="container">
+      <div class="flex lg:flex-row flex-col space-x-16 items-center">
+        <div>
+          <li
+            onclick="changeContent('personal-Info', this)"
+            class="submenu-link cursor-pointer list-none py-2 w-52 max-w-[13rem] h-12"
+          >
+            <div class="flex justify-between items-center mx-1">
+              <div class="flex space-x-3">
+                <div>
+                  <img src="image/profile/acc.svg" alt="profile icon" />
+                </div>
+                <div>
+                  <a class=" "
+                    ><span
+                      class="text-base font-bold hover:text-orange transition-all"
+                      >Personal Info</span
+                    ></a
+                  >
+                </div>
+              </div>
+              <div>
+                <img src="image/profile/arrow-mobile.svg" alt="arrow icon" />
+              </div>
+            </div>
+          </li>
+          <li
+            onclick="changeContent('address-Book', this)"
+            class="submenu-link cursor-pointer list-none py-2 w-52 max-w-[13rem] h-12"
+          >
+            <div class="flex justify-between items-center mx-1">
+              <div class="flex space-x-3">
+                <div>
+                  <img src="image/profile/home-mobile.svg" alt="profile icon" />
+                </div>
+                <div>
+                  <a class=" "
+                    ><span
+                      class="text-base font-bold hover:text-orange transition-all"
+                      >Address Book</span
+                    ></a
+                  >
+                </div>
+              </div>
+              <div>
+                <img src="image/profile/arrow-mobile.svg" alt="arrow icon" />
+              </div>
+            </div>
+          </li>
+          <li
+            onclick="changeContent('my-Orders', this)"
+            class="submenu-link cursor-pointer list-none py-2 w-52 max-w-[13rem] h-12"
+          >
+            <div class="flex justify-between items-center mx-1">
+              <div class="flex space-x-3">
+                <div>
+                  <img src="image/profile/bag.svg" alt="profile icon" />
+                </div>
+                <div>
+                  <a class=" "
+                    ><span
+                      class="text-base font-bold hover:text-orange transition-all"
+                      >My Orders</span
+                    ></a
+                  >
+                </div>
+              </div>
+              <div>
+                <img src="image/profile/arrow-mobile.svg" alt="arrow icon" />
+              </div>
+            </div>
+          </li>
+          <li
+            onclick="changeContent('order-track', this)"
+            class="submenu-link cursor-pointer list-none py-2 w-52 max-w-[13rem] h-12"
+          >
+            <div class="flex justify-between items-center mx-1">
+              <div class="flex space-x-3">
+                <div>
+                  <img src="image/profile/track.svg" alt="profile icon" />
+                </div>
+                <div>
+                  <a class=" "
+                    ><span
+                      class="text-base font-bold hover:text-orange transition-all"
+                      >Order Track</span
+                    ></a
+                  >
+                </div>
+              </div>
+              <div>
+                <img src="image/profile/arrow-mobile.svg" alt="arrow icon" />
+              </div>
+            </div>
+          </li>
+          <li
+            onclick="changeContent('wishlist', this)"
+            class="submenu-link cursor-pointer list-none py-2 w-52 max-w-[13rem] h-12"
+          >
+            <div class="flex justify-between items-center mx-1">
+              <div class="flex space-x-3">
+                <div>
+                  <img src="image/profile/review.svg" alt="profile icon" />
+                </div>
+                <div>
+                  <a class=" "
+                    ><span
+                      class="text-base font-bold hover:text-orange transition-all"
+                      >Wishlist</span
+                    ></a
+                  >
+                </div>
+              </div>
+              <div>
+                <img src="image/profile/arrow-mobile.svg" alt="arrow icon" />
+              </div>
+            </div>
+          </li>
+          <li
+            onclick="changeContent('reviews', this)"
+            class="submenu-link cursor-pointer list-none py-2 w-52 max-w-[13rem] h-12"
+          >
+            <div class="flex justify-between items-center mx-1">
+              <div class="flex space-x-3">
+                <div>
+                  <img src="image/profile/review.svg" alt="profile icon" />
+                </div>
+                <div>
+                  <a class=" "
+                    ><span
+                      class="text-base font-bold hover:text-orange transition-all"
+                      >Reviews</span
+                    ></a
+                  >
+                </div>
+              </div>
+              <div>
+                <img src="image/profile/arrow-mobile.svg" alt="arrow icon" />
+              </div>
+            </div>
+          </li>
+          <li class="cursor-pointer list-none py-2 w-52 max-w-[13rem] h-12">
+            <div class="flex justify-between items-center mx-1">
+              <div class="flex space-x-3">
+                <div>
+                  <img src="image/profile/logout.svg" alt="profile icon" />
+                </div>
+                <div>
+                  <a class=" "
+                    ><span
+                      class="text-base font-bold hover:text-orange transition-all"
+                      >Logout</span
+                    ></a
+                  >
+                </div>
+              </div>
+              <div>
+                <img src="image/profile/arrow-mobile.svg" alt="arrow icon" />
+              </div>
+            </div>
+          </li>
+        </div>
+        <div
+          class="mt-16 lg:mt-22 w-full lg:w-8/12 mx-64"
+          id="right-sidebar-content"
+        >
+          <!-- =========  Personal Info start ========= -->
+          <div id="personal-Info" class="content-div">
+            <div
+              id="personalInfoSection"
+              class="relative flex flex-col w-full shadow-lg rounded-xl border"
+            >
+              <div class="rounded-t mb-0 px-6 py-6">
+                <div class="text-center flex justify-between">
+                  <h6 class="text-xl font-bold">Personal Info</h6>
+                </div>
+              </div>
+              <div class="flex justify-start px-6 space-x-8 h-80">
+                <a href="#"
+                  ><div class="cursor-pointer absolute top-2 right-2">
+                    <img
+                      src="image/profile/profile-edit.svg"
+                      alt="edit icon"
+                    /></div
+                ></a>
+                <div>
+                  <img
+                    class="w-28 h-28 rounded-md null"
+                    src="image/profile/user.png"
+                    alt="user profile picture"
+                  />
+                </div>
+                <div class="flex-col text-[#1D3557] font-semibold space-y-4">
+                  <div>Name</div>
+                  <div>Email</div>
+                  <div>Mobile</div>
+                  <div>Birthday</div>
+                  <div>Gender</div>
+                </div>
+                <div class="flex-col text-[#1D3557] font-semibold space-y-4">
+                  <div>:</div>
+                  <div>:</div>
+                  <div>:</div>
+                  <div>:</div>
+                  <div>:</div>
+                </div>
+                <div class="flex-col text-[#1D3557] font-semibold space-y-4">
+                  <div>s m shaown</div>
+                  <div>smshaown6565@gmail.com</div>
+                  <div>01911011837</div>
+                  <div>Not specified</div>
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                  <div>Not specified</div>
+                </div>
+              </div>
+            </div>
+
+            <!-- update Personal Info  -->
+            <div
+              id="updatePersonalInfoSection"
+              class="flex flex-col items-center w-full shadow-lg rounded-xl border hidden"
+            >
+              <div class="w-full max-w-2xl">
+                <h1 class="text-2xl mt-4">Personal Info</h1>
+                <div class="flex justify-between mt-4">
+                  <div class="w-16 h-16 lg:w-28 lg:h-28 relative">
+                    <img
+                      id="profileEditIcon"
+                      class="w-16 h-16 lg:w-28 lg:h-28 rounded-md object-cover null"
+                      src="image/profile/user.png"
+                      alt="user profile picture"
+                    /><label class="cursor-pointer"
+                      ><div class="flex justify-center mx-auto space-x-3">
+                        <div class="absolute -bottom-4 mx-10">
+                          <img
+                            class="w-8 h-8 md:w-10 md:h-10 lg:w-auto"
+                            src="image/profile/profile-upload.svg"
+                            alt="upload icon"
+                          />
+                        </div>
+                      </div>
+                      <input class="hidden" type="file" name="picture"
+                    /></label>
+                  </div>
+                  <div>
+                    <form>
+                      <div
+                        class="flex-col font-semibold space-y-2 w-full min-w-[32rem]"
+                      >
+                        <label class="text-base font-medium block">Name</label
+                        ><input
+                          name="name"
+                          type="text"
+                          class="font-semibold border border-gray-300 text-gray-900 sm:text-sm rounded-md block w-40 md:w-60 xl:w-full p-3 outline-none"
+                          required=""
+                          value="s m shaown"
+                        /><label class="text-base font-medium block"
+                          >Email</label
+                        >
+                        <div>
+                          <input
+                            name="email"
+                            type="email"
+                            id="email"
+                            class="font-semibold border border-gray-300 text-gray-900 sm:text-sm rounded-md block w-40 md:w-60 xl:w-full p-3 outline-none"
+                            value="smshaown6565@gmail.com"
+                          />
+                        </div>
+                        <label class="text-base font-medium block">Phone</label
+                        ><input
+                          name="phone"
+                          type="number"
+                          class="font-semibold border border-gray-300 text-gray-900 sm:text-sm rounded-md block w-40 md:w-60 xl:w-full p-3 outline-none"
+                          value="01911011837"
+                        />
+                        <div class="space-y-2">
+                          <label class="text-base font-medium block"
+                            >Birthday</label
+                          ><input
+                            class="font-semibold border border-gray-300 text-gray-900 sm:text-sm rounded-md block w-40 md:w-60 xl:w-full p-3 outline-none"
+                            name="dob"
+                            type="date"
+                            value=""
+                          />
+                        </div>
+                        <div class="space-y-2">
+                          <label class="text-base font-medium block"
+                            >Gender</label
+                          ><select
+                            style="
+                              background-image: url('/images/d-arrow.svg');
+                              background-position: 97% center;
+                            "
+                            name="gender"
+                            required=""
+                            class="font-semibold border border-gray-300 outline-none sm:text-sm rounded-md block w-40 md:w-60 xl:w-full p-3 appearance-none bg-no-repeat decorated"
+                          >
+                            <option value="none" disabled="" hidden="">
+                              Select Gender
+                            </option>
+                            <option value="1">Male</option>
+                            <option value="2">Female</option>
+                            <option value="3">Others</option>
+                          </select>
+                        </div>
+                      </div>
+                      <div class="flex space-x-5 mt-8">
+                        <div>
+                          <button
+                            type="submit"
+                            class="px-14 shadow-lg py-4 rounded-xl text-white text-lg false"
+                            style="background-color: var(--primary-color)"
+                          >
+                            Update
+                          </button>
+                        </div>
+                        <a href="/user/profile/myprofile"
+                          ><div>
+                            <button
+                              id="cancelButton"
+                              class="border border-[#B5C2D5] px-14 py-4 rounded-xl text-lg false"
+                            >
+                              Cancel
+                            </button>
+                          </div></a
+                        >
+                      </div>
+                      <div class="mt-8">
+                        <h6 class="font-semibold">
+                          Want to change password?
+                          <a href="/#"
+                            ><span
+                              class="cursor-pointer"
+                              style="color: var(--primary-color)"
+                              >Click Here</span
+                            ></a
+                          >
+                        </h6>
+                      </div>
+                      <div class="mt-8"></div>
+                    </form>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- =========   Delivery Address start ========= -->
+          <div id="address-Book" class="content-div" style="display: none">
+            <div class="">
+              <div class="flex flex-col min-w-0 break-words w-full mb-6">
+                <section>
+                  <div class="flex flex-col h-full mt-8">
+                    <div class="w-full max-w-4xl bg-white">
+                      <div class="flex-auto px-4 lg:px-10 py-10 pt-0">
+                        <h6 class="text-base lg:text-2xl font-bold mb-3">
+                          Delivery Address
+                        </h6>
+                        <form>
+                          <div class="flex flex-wrap">
+                            <div class="w-full lg:w-6/12 px-2">
+                              <div class="relative w-full mb-3">
+                                <label
+                                  class="block mb-2 text-sm font-semibold text-gray-900"
+                                  >Full Name
+                                  <span class="text-red-500">*</span></label
+                                ><input
+                                  class="p-2 border border-gray-300 text-gray-900 text-sm rounded-lg block w-full h-[45px]"
+                                  name="name"
+                                  type="text"
+                                  placeholder="Full Name"
+                                />
+                              </div>
+                            </div>
+                            <div class="w-full lg:w-6/12 px-2">
+                              <div class="relative w-full">
+                                <label
+                                  class="block mb-2 text-sm font-semibold text-gray-900"
+                                  >Phone
+                                  <span class="text-red-500">*</span></label
+                                ><input
+                                  class="border border-gray-300 text-gray-900 text-sm rounded-lg block w-full p-2 h-[45px]"
+                                  name="phone_no"
+                                  type="number"
+                                  placeholder="Ex:01xxxxxxxxx"
+                                />
+                              </div>
+                            </div>
+                            <div class="w-full lg:w-6/12 px-2 mt-2">
+                              <div class="relative w-full">
+                                <label
+                                  class="block mb-2 text-sm font-semibold text-gray-900"
+                                  >Alternative Phone </label
+                                ><input
+                                  class="border border-gray-300 text-gray-900 text-sm rounded-lg block w-full p-2 h-[45px]"
+                                  name="alt_phone"
+                                  type="number"
+                                  placeholder="Ex:01xxxxxxxxx"
+                                />
+                              </div>
+                            </div>
+                            <div class="w-full lg:w-6/12 px-2 mt-2">
+                              <div class="relative w-full">
+                                <label
+                                  class="block mb-2 text-sm font-semibold text-gray-900"
+                                  >Division
+                                  <span class="text-red-500">*</span></label
+                                >
+                                <select
+                                  id="countries"
+                                  class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
+                                >
+                                  <option selected>Choose a country</option>
+                                  <option value="US">United States</option>
+                                  <option value="CA">Canada</option>
+                                  <option value="FR">France</option>
+                                  <option value="DE">Germany</option>
+                                </select>
+                              </div>
+                            </div>
+                            <div class="w-full lg:w-6/12 px-2 mt-3">
+                              <label
+                                class="block mb-2 text-sm font-semibold text-gray-900"
+                                >District
+                                <span class="text-red-500">*</span></label
+                              >
+                              <select
+                                id="countries"
+                                class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
+                              >
+                                <option selected>Choose a country</option>
+                                <option value="US">United States</option>
+                                <option value="CA">Canada</option>
+                                <option value="FR">France</option>
+                                <option value="DE">Germany</option>
+                              </select>
+                            </div>
+                            <div class="w-full lg:w-6/12 px-2 mt-3">
+                              <label
+                                class="block mb-2 text-sm font-semibold text-gray-900"
+                                >Thana
+                                <span class="text-red-500">*</span></label
+                              >
+                              <select
+                                id="countries"
+                                class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
+                              >
+                                <option selected>Choose a country</option>
+                                <option value="US">United States</option>
+                                <option value="CA">Canada</option>
+                                <option value="FR">France</option>
+                                <option value="DE">Germany</option>
+                              </select>
+                            </div>
+                            <div class="w-full px-2 mt-3">
+                              <div class="relative w-full">
+                                <label
+                                  class="block mb-2 text-sm font-semibold text-gray-900"
+                                  >Address
+                                  <span class="text-red-500">*</span></label
+                                ><textarea
+                                  rows="1"
+                                  class="border border-gray-300 text-gray-900 text-sm rounded-md block w-full p-2 h-[45px]"
+                                  name="address"
+                                  placeholder="House no. / Building / Street"
+                                ></textarea>
+                              </div>
+                            </div>
+                          </div>
+                          <div
+                            class="flex justify-between items-center mt-4 mx-2"
+                          >
+                            <div class="flex space-x-3 items-center text-sm">
+                              <div
+                                class="font-semibold bg-[#FFF1BF] border border-[#FAC508] w-[80px] lg:w-[125px] h-[35px] lg:h-[45px] rounded-md relative flex justify-center items-center cursor-pointer"
+                              >
+                                Home<span class="absolute top-0 right-0"
+                                  ><img
+                                    src="image/profile/tick.svg"
+                                    alt="tick icon"
+                                /></span>
+                              </div>
+                              <div
+                                class="font-semibold bg-[#BAFFAF] border border-[#049A01] w-[80px] lg:w-[125px] h-[35px] lg:h-[45px] rounded-md relative flex justify-center items-center cursor-pointer"
+                              >
+                                Office
+                              </div>
+                            </div>
+                            <button
+                              class="font-semibold bg-[#F3E9FF] border border-[#8032DC] w-[80px] lg:w-[125px] h-[35px] lg:h-[45px] rounded-md transition duration-150 ease-in-out inline-flex justify-center items-center"
+                              type="submit"
+                            >
+                              Save
+                            </button>
+                          </div>
+                        </form>
+                      </div>
+                    </div>
+                  </div>
+                </section>
+              </div>
+            </div>
+          </div>
+
+          <!-- =========   my-Orders start ========= -->
+          <div id="my-Orders" class="content-div" style="display: none">
+            <div
+              class="flex flex-col items-center justify-center w-full mb-6 shadow-lg rounded-xl border"
+            >
+              <div class="w-full p-4">
+                <div
+                  class="inline-block min-w-full shadow rounded-lg overflow-hidden h-72"
+                >
+                  <div class="min-w-full text-center">
+                    <ul
+                      class="flex justify-between items-center w-full px-5 py-3 border-b-2 border-gray-200 bg-gray-100 text-left text-xs font-semibold text-gray-600 uppercase tracking-wider"
+                    >
+                      <li class="">Order Details</li>
+                      <li class="">Ship to</li>
+                      <li class="">Total Amount</li>
+                      <li class="">Order Status</li>
+                      <li class="">Status</li>
+                      <li class="">Action</li>
+                    </ul>
+                    <div>
+                      <div class="flex justify-center items-center h-72">
+                        <div class="">
+                          <h1 class="text-base">No record found!</h1>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div id="order-track" class="content-div" style="display: none">
+            <div
+              class="flex flex-col min-w-0 break-words w-full mb-6 shadow-lg rounded-xl border"
+            >
+              <div class="p-8">
+                <h1 class="text-xl font-medium">Track your Order</h1>
+                <form>
+                  <div class="flex items-center space-x-2 mt-4">
+                    <div>
+                      <input
+                        name="order_no"
+                        type="text"
+                        placeholder="OrderNo"
+                        class="p-2 text-sm w-96 rounded-md h-12 focus:outline-none border border-[#D9D9D9]"
+                      />
+                    </div>
+                    <div>
+                      <button
+                        type="submit"
+                        class="h-12 px-20 rounded text-lg text-white w-full focus:outline-none"
+                        style="background-color: var(--primary-color)"
+                      >
+                        Search
+                      </button>
+                    </div>
+                  </div>
+                </form>
+                <div class="mt-8">
+                  <h1 class="text-lg font-semibold">Your order No: 0</h1>
+                </div>
+              </div>
+              <div
+                class="relative m-8 w-7/12 lg:w-[65vw] xl:w-[70vw] 2xl:w-[60vw] mx-10 lg:mt-20"
+              >
+                <div
+                  class="border-r-4 border-[#5BE078] absolute h-full top-0 left-4 hidden false"
+                ></div>
+                <ul class="list-none m-0 p-0">
+                  <div class="">
+                    <h1 class="text-xl text-purple-400">
+                      No order track record
+                    </h1>
+                  </div>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          <div id="wishlist" class="content-div" style="display: none">
+            <div
+              class="flex flex-col items-center justify-center w-full mb-6 shadow-lg rounded-xl border"
+            >
+              <div class="w-full p-4">
+                <div
+                  class="inline-block min-w-full shadow rounded-lg overflow-hidden h-72 bg-gray-100"
+                >
+                  <div class="min-w-full text-center">
+                    <ul
+                      class="flex justify-between items-center w-full px-5 py-3 border-b-2 border-gray-200 bg-gray-100 text-left text-xs font-semibold text-gray-600 uppercase tracking-wider"
+                    >
+                      <li class="">Product</li>
+                      <li class="">Product Image</li>
+                      <li class="">Product Name</li>
+                      <li class="">Purchased Date</li>
+                      <li class="">Action</li>
+                    </ul>
+                    <div>
+                      <div class="flex justify-center items-center h-72">
+                        <div class="">
+                          <h1 class="text-base">No record found!</h1>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div id="reviews" class="content-div" style="display: none">
+            <div class="w-full mb-6 shadow-lg rounded-xl border px-4 py-2">
+              <ul
+                id="reviewsTabs"
+                class="reviews-tab-container flex items-center gap-8 border-b-1 border-gray-400"
+              >
+                <li
+                  class="reviews-tab-button active cursor-pointer"
+                  id="tab1"
+                  onclick="changeTab('content1')"
+                >
+                  My Reviews
+                </li>
+                <li
+                  class="reviews-tab-button cursor-pointer"
+                  id="tab2"
+                  onclick="changeTab('content2')"
+                >
+                  History
+                </li>
+              </ul>
+
+              <div class="mt-4">
+                <div id="content1" class="reviews-tab-content active">
+                  <div class="bg-gray-50 mt-4">
+                    <div class="px-4 sm:px-8">
+                      <div class="py-8">
+                        <div>
+                          <h2 class="text-2xl font-semibold leading-tight">
+                            My Reviews
+                          </h2>
+                        </div>
+                        <div
+                          class="inline-block min-w-full shadow rounded-lg overflow-hidden h-72 bg-gray-100 mt-4"
+                        >
+                          <div class="min-w-full text-center">
+                            <ul
+                              class="flex justify-between items-center w-full px-5 py-3 border-b-2 border-gray-200 bg-gray-100 text-left text-xs font-semibold text-gray-600 uppercase tracking-wider"
+                            >
+                              <li class="">Product</li>
+                              <li class="">Product Image</li>
+                              <li class="">Product Name</li>
+                              <li class="">Purchased Date</li>
+                              <li class="">Action</li>
+                            </ul>
+                            <div>
+                              <div
+                                class="flex justify-center items-center h-72"
+                              >
+                                <div class="">
+                                  <h1 class="text-base">No record found!</h1>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div id="content2" class="reviews-tab-content hidden">
+                  <div
+                    class="inline-block min-w-full shadow rounded-lg overflow-hidden h-72 bg-[#fff] mt-4"
+                  >
+                    <div class="min-w-full text-center">
+                      <div>
+                        <div class="flex justify-center items-center h-72">
+                          <div class="">
+                            <h1 class="text-[#000]">No record found!</h1>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- ==== -->
+        </div>
+      </div>
+    </div>
+
+    <script src="js/main.js"></script>
+  </body>
+</html>
