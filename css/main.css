@@ -178,3 +178,15 @@ body {
 .reviews-tab-content.active {
   display: block;
 }
+
+.group:hover .group-hover\:visible {
+  visibility: visible;
+}
+
+.group2:hover .group2-hover\:visible {
+  visibility: visible;
+}
+
+.left-20 {
+  left: 5rem;
+}

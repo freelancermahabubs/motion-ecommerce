@@ -209,3 +209,25 @@ function changeTab(tabId) {
   clickedButton.classList.add('active');
   clickedContent.classList.add('active');
 }
+
+
+
+// byu now cart 
+document.addEventListener('DOMContentLoaded', function () {
+  const openCartIcon = document.getElementById('openCartIcon');
+  const cartContainer = document.querySelector('.cart-container');
+  const closeCartButton = document.getElementById('closeCartButton');
+
+  openCartIcon.addEventListener('click', function () {
+    cartContainer.classList.toggle('hidden');
+  });
+
+  closeCartButton.addEventListener('click', function () {
+    cartContainer.classList.add('hidden');
+  });
+});
+
+function toggleForm() {
+  var formContainer = document.getElementById("formContainer");
+  formContainer.classList.toggle("hidden");
+}
