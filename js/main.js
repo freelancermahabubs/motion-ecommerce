@@ -231,3 +231,21 @@ function toggleForm() {
   var formContainer = document.getElementById("formContainer");
   formContainer.classList.toggle("hidden");
 }
+
+
+
+function leftSlideNavbar() {
+  var categoriesLeftSide = document.getElementById('categoriesLeftSide');
+  var iconElement = document.querySelector('.bx-menu-alt-left');
+
+  // Toggle the visibility of categoriesLeftSide
+  if (categoriesLeftSide.style.left === '-100%') {
+    categoriesLeftSide.style.left = '0';
+    // Change the icon to the close icon
+    iconElement.classList.replace('bx-menu-alt-left', 'bx-menu-alt-right');
+  } else {
+    categoriesLeftSide.style.left = '-100%';
+    // Change the icon back to the menu icon
+    iconElement.classList.replace('bx-menu-alt-right', 'bx-menu-alt-left');
+  }
+}

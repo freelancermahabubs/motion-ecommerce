@@ -18,188 +18,419 @@
     <link rel="stylesheet" href="css/main.css" />
   </head>
   <body>
-    <nav
-      class="bg-white z-20 h-20 shadow-xl fixed top-0 inset-x-0"
-      data-headlessui-state=""
-    >
-      <div class="mx-auto px-2 sm:px-6 lg:px-8">
-        <div class="relative flex items-center justify-between h-20">
-          <div class="absolute inset-y-0 left-0 flex items-center">
-            <button
-              class="inline-flex items-center justify-center p-2 rounded-md focus:outline-none"
-              id="headlessui-disclosure-button-6"
-              type="button"
-              aria-expanded="false"
-              data-headlessui-state=""
-            >
-              <span
-                style="
-                  box-sizing: border-box;
-                  display: inline-block;
-                  overflow: hidden;
-                  width: initial;
-                  height: initial;
-                  background: none;
-                  opacity: 1;
-                  border: 0px;
-                  margin: 0px;
-                  padding: 0px;
-                  position: relative;
-                  max-width: 100%;
-                "
+    <!-- xl:hidden text-sm overflow-y-auto -->
+    <span onclick="leftSlideNavbar"><i class="bx bx-menu-alt-left"></i></span>
+    <!-- categoriesLeftSide div  -->
+    <div id="categoriesLeftSide" class="xl:hidden text-sm overflow-y-auto">
+      <div
+        class="transition-all duration-500 fixed top-16 left-0 w-full h-full md:w-[35%] lg:w-[30%] z-50"
+      >
+        <div
+          class="transition-all duration-500 flex h-full flex-col bg-white py-8 border-r relative shadow-xl"
+          style="overflow-y: auto"
+        >
+          <div class="">
+            <h2 class="mx-4 text-xl font-medium text-center text-orange">
+              Categories
+            </h2>
+            <div class="w-full hover:bg-gray-200 px-2 py-2">
+              <div class="flex justify-between items-center px-2">
+                <span>Smart Watches</span
                 ><span
-                  style="
-                    box-sizing: border-box;
-                    display: block;
-                    width: initial;
-                    height: initial;
-                    background: none;
-                    opacity: 1;
-                    border: 0px;
-                    margin: 0px;
-                    padding: 0px;
-                    max-width: 100%;
-                  "
-                  ><img
-                    style="
-                      display: block;
-                      max-width: 100%;
-                      width: initial;
-                      height: initial;
-                      background: none;
-                      opacity: 1;
-                      border: 0px;
-                      margin: 0px;
-                      padding: 0px;
-                    "
-                    alt=""
-                    aria-hidden="true"
-                    src="data:image/svg+xml,%3csvg%20xmlns=%27http://www.w3.org/2000/svg%27%20version=%271.1%27%20width=%2726%27%20height=%2718%27/%3e" /></span
-                ><img
-                  alt="menu icon"
-                  srcset="
-                    /images/bread-crumb.svg 1x,
-                    /images/bread-crumb.svg 2x
-                  "
-                  src="/images/bread-crumb.svg"
-                  decoding="async"
-                  data-nimg="intrinsic"
-                  style="
-                    position: absolute;
-                    inset: 0px;
-                    box-sizing: border-box;
-                    padding: 0px;
-                    border: medium;
-                    margin: auto;
-                    display: block;
-                    width: 0px;
-                    height: 0px;
-                    min-width: 100%;
-                    max-width: 100%;
-                    min-height: 100%;
-                    max-height: 100%;
-                  "
-              /></span>
-            </button>
-          </div>
-          <div class="flex-1 flex items-center justify-center">
-            <div class="flex-shrink-0 flex items-center">
-              <a href="/"
+                  class="cursor-pointer transition-all text-orange text-2xl"
+                  >▾</span
+                >
+              </div>
+              <div class="h-0 overflow-hidden">
+                <div class="w-full hover:bg-gray-200 px-2 py-2">
+                  <div class="flex justify-between items-center px-2">
+                    <a href="/categories/amazfit"><span>Amazfit</span></a>
+                  </div>
+                </div>
+                <div class="w-full hover:bg-gray-200 px-2 py-2">
+                  <div class="flex justify-between items-center px-2">
+                    <a href="/categories/haylou"><span>Haylou</span></a>
+                  </div>
+                </div>
+                <div class="w-full hover:bg-gray-200 px-2 py-2">
+                  <div class="flex justify-between items-center px-2">
+                    <a href="/categories/xiaomi"><span>Xiaomi</span></a>
+                  </div>
+                </div>
+                <div class="w-full hover:bg-gray-200 px-2 py-2">
+                  <div class="flex justify-between items-center px-2">
+                    <a href="/categories/oneplus"><span>Oneplus</span></a>
+                  </div>
+                </div>
+                <div class="w-full hover:bg-gray-200 px-2 py-2">
+                  <div class="flex justify-between items-center px-2">
+                    <a href="/categories/imilab"><span>Imilab</span></a>
+                  </div>
+                </div>
+                <div class="w-full hover:bg-gray-200 px-2 py-2">
+                  <div class="flex justify-between items-center px-2">
+                    <a href="/categories/honor"><span>Honor</span></a>
+                  </div>
+                </div>
+                <div class="w-full hover:bg-gray-200 px-2 py-2">
+                  <div class="flex justify-between items-center px-2">
+                    <a href="/categories/mibro"><span>Mibro</span></a>
+                  </div>
+                </div>
+                <div class="w-full hover:bg-gray-200 px-2 py-2">
+                  <div class="flex justify-between items-center px-2">
+                    <a href="/categories/lenovo"><span>Lenovo</span></a>
+                  </div>
+                </div>
+                <div class="w-full hover:bg-gray-200 px-2 py-2">
+                  <div class="flex justify-between items-center px-2">
+                    <a href="/categories/realme"><span>Realme</span></a>
+                  </div>
+                </div>
+                <div class="w-full hover:bg-gray-200 px-2 py-2">
+                  <div class="flex justify-between items-center px-2">
+                    <a href="/categories/ticwatch"><span>TicWatch</span></a>
+                  </div>
+                </div>
+                <div class="w-full hover:bg-gray-200 px-2 py-2">
+                  <div class="flex justify-between items-center px-2">
+                    <a href="/categories/kieslect"><span>Kieslect</span></a>
+                  </div>
+                </div>
+                <div class="w-full hover:bg-gray-200 px-2 py-2">
+                  <div class="flex justify-between items-center px-2">
+                    <a href="/categories/wiwu"><span>WiWU</span></a>
+                  </div>
+                </div>
+                <div class="w-full hover:bg-gray-200 px-2 py-2">
+                  <div class="flex justify-between items-center px-2">
+                    <a href="/categories/g-tide"><span>G-Tide</span></a>
+                  </div>
+                </div>
+                <div class="w-full hover:bg-gray-200 px-2 py-2">
+                  <div class="flex justify-between items-center px-2">
+                    <a href="/categories/xinji"><span>Xinji</span></a>
+                  </div>
+                </div>
+                <div class="w-full hover:bg-gray-200 px-2 py-2">
+                  <div class="flex justify-between items-center px-2">
+                    <a href="/categories/apple"><span>Apple</span></a>
+                  </div>
+                </div>
+                <div class="w-full hover:bg-gray-200 px-2 py-2">
+                  <div class="flex justify-between items-center px-2">
+                    <a href="/categories/noise"><span>Noise</span></a>
+                  </div>
+                </div>
+                <div class="w-full hover:bg-gray-200 px-2 py-2">
+                  <div class="flex justify-between items-center px-2">
+                    <a href="/categories/imiki"><span>Imiki</span></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="w-full hover:bg-gray-200 px-2 py-2">
+              <div class="flex justify-between items-center px-2">
+                <span>Smart Phones</span
                 ><span
-                  style="
-                    box-sizing: border-box;
-                    display: inline-block;
-                    overflow: hidden;
-                    width: initial;
-                    height: initial;
-                    background: none;
-                    opacity: 1;
-                    border: 0px;
-                    margin: 0px;
-                    padding: 0px;
-                    position: relative;
-                    max-width: 100%;
-                  "
-                  ><span
-                    style="
-                      box-sizing: border-box;
-                      display: block;
-                      width: initial;
-                      height: initial;
-                      background: none;
-                      opacity: 1;
-                      border: 0px;
-                      margin: 0px;
-                      padding: 0px;
-                      max-width: 100%;
-                    "
-                    ><img
-                      style="
-                        display: block;
-                        max-width: 100%;
-                        width: initial;
-                        height: initial;
-                        background: none;
-                        opacity: 1;
-                        border: 0px;
-                        margin: 0px;
-                        padding: 0px;
-                      "
-                      alt=""
-                      aria-hidden="true"
-                      src="data:image/svg+xml,%3csvg%20xmlns=%27http://www.w3.org/2000/svg%27%20version=%271.1%27%20width=%27150%27%20height=%2755%27/%3e" /></span
-                  ><img
-                    alt="Motion View Logo"
-                    srcset="
-                      /images/motion-mobile.svg 1x,
-                      /images/motion-mobile.svg 2x
-                    "
-                    src="/images/motion-mobile.svg"
-                    decoding="async"
-                    data-nimg="intrinsic"
-                    class="block xl:hidden"
-                    style="
-                      position: absolute;
-                      inset: 0px;
-                      box-sizing: border-box;
-                      padding: 0px;
-                      border: medium;
-                      margin: auto;
-                      display: block;
-                      width: 0px;
-                      height: 0px;
-                      min-width: 100%;
-                      max-width: 100%;
-                      min-height: 100%;
-                      max-height: 100%;
-                    " /></span
-              ></a>
+                  class="cursor-pointer transition-all text-orange text-2xl"
+                  >▾</span
+                >
+              </div>
+              <div class="h-0 overflow-hidden">
+                <div class="w-full hover:bg-gray-200 px-2 py-2">
+                  <div class="flex justify-between items-center px-2">
+                    <a href="/categories/infinix"><span>Infinix</span></a>
+                  </div>
+                </div>
+                <div class="w-full hover:bg-gray-200 px-2 py-2">
+                  <div class="flex justify-between items-center px-2">
+                    <a href="/categories/samsung"><span>Samsung</span></a>
+                  </div>
+                </div>
+                <div class="w-full hover:bg-gray-200 px-2 py-2">
+                  <div class="flex justify-between items-center px-2">
+                    <a href="/categories/realme-phone"><span>Realme</span></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="w-full hover:bg-gray-200 px-2 py-2">
+              <div class="flex justify-between items-center px-2">
+                <span>Headphones</span
+                ><span
+                  class="cursor-pointer transition-all text-orange text-2xl"
+                  >▾</span
+                >
+              </div>
+              <div class="h-0 overflow-hidden">
+                <div class="w-full hover:bg-gray-200 px-2 py-2">
+                  <div class="flex justify-between items-center px-2">
+                    <a href="/categories/true-wireless-earbuds"
+                      ><span>True Wireless Earbuds</span></a
+                    >
+                  </div>
+                </div>
+                <div class="w-full hover:bg-gray-200 px-2 py-2">
+                  <div class="flex justify-between items-center px-2">
+                    <a href="/categories/bluetooth-headphones"
+                      ><span>Bluetooth Headphones</span></a
+                    >
+                  </div>
+                </div>
+                <div class="w-full hover:bg-gray-200 px-2 py-2">
+                  <div class="flex justify-between items-center px-2">
+                    <a href="/categories/wired-headphones"
+                      ><span>Wired Headphones</span></a
+                    >
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="w-full hover:bg-gray-200 px-2 py-2">
+              <div class="flex justify-between items-center px-2">
+                <span>Smart TV &amp; Accessories</span
+                ><span
+                  class="cursor-pointer transition-all text-orange text-2xl"
+                  >▾</span
+                >
+              </div>
+              <div class="h-0 overflow-hidden">
+                <div class="w-full hover:bg-gray-200 px-2 py-2">
+                  <div class="flex justify-between items-center px-2">
+                    <a href="/categories/android-smart-tvs"
+                      ><span>Android Smart TVs</span></a
+                    >
+                  </div>
+                </div>
+                <div class="w-full hover:bg-gray-200 px-2 py-2">
+                  <div class="flex justify-between items-center px-2">
+                    <a href="/categories/android-tv-boxes"
+                      ><span>Android TV Boxes</span></a
+                    >
+                  </div>
+                </div>
+                <div class="w-full hover:bg-gray-200 px-2 py-2">
+                  <div class="flex justify-between items-center px-2">
+                    <a href="/categories/tv-accessories"
+                      ><span>TV Accessories</span></a
+                    >
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="w-full hover:bg-gray-200 px-2 py-2">
+              <div class="flex justify-between items-center px-2">
+                <span>Computer &amp; Accessories</span
+                ><span
+                  class="cursor-pointer transition-all text-orange text-2xl"
+                  >▾</span
+                >
+              </div>
+              <div class="h-0 overflow-hidden">
+                <div class="w-full hover:bg-gray-200 px-2 py-2">
+                  <div class="flex justify-between items-center px-2">
+                    <a href="/categories/computer-monitors"
+                      ><span>Computer Monitors</span></a
+                    >
+                  </div>
+                </div>
+                <div class="w-full hover:bg-gray-200 px-2 py-2">
+                  <div class="flex justify-between items-center px-2">
+                    <a href="/categories/keyboards-mouses"
+                      ><span>Keyboards &amp; Mouses</span></a
+                    >
+                  </div>
+                </div>
+                <div class="w-full hover:bg-gray-200 px-2 py-2">
+                  <div class="flex justify-between items-center px-2">
+                    <a href="/categories/computer-accessories"
+                      ><span>Computer Accessories</span></a
+                    >
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="w-full hover:bg-gray-200 px-2 py-2">
+              <div class="flex justify-between items-center px-2">
+                <span>Wireless Speakers</span
+                ><span
+                  class="cursor-pointer transition-all text-orange text-2xl"
+                  >▾</span
+                >
+              </div>
+              <div class="h-0 overflow-hidden">
+                <div class="w-full hover:bg-gray-200 px-2 py-2">
+                  <div class="flex justify-between items-center px-2">
+                    <a href="/categories/soundbars"><span>Soundbars</span></a>
+                  </div>
+                </div>
+                <div class="w-full hover:bg-gray-200 px-2 py-2">
+                  <div class="flex justify-between items-center px-2">
+                    <a href="/categories/bluetooth-speakers"
+                      ><span>Bluetooth Speakers</span></a
+                    >
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="w-full hover:bg-gray-200 px-2 py-2">
+              <div class="flex justify-between items-center px-2">
+                <a href="/categories/security-cameras"
+                  ><span>Security Cameras</span></a
+                >
+              </div>
+            </div>
+            <div class="w-full hover:bg-gray-200 px-2 py-2">
+              <div class="flex justify-between items-center px-2">
+                <span>Smart Home Appliances</span
+                ><span
+                  class="cursor-pointer transition-all text-orange text-2xl"
+                  >▾</span
+                >
+              </div>
+              <div class="h-0 overflow-hidden">
+                <div class="w-full hover:bg-gray-200 px-2 py-2">
+                  <div class="flex justify-between items-center px-2">
+                    <a href="/categories/air-purifiers"
+                      ><span>Air Purifiers</span></a
+                    >
+                  </div>
+                </div>
+                <div class="w-full hover:bg-gray-200 px-2 py-2">
+                  <div class="flex justify-between items-center px-2">
+                    <a href="/categories/fans"><span>Fans</span></a>
+                  </div>
+                </div>
+                <div class="w-full hover:bg-gray-200 px-2 py-2">
+                  <div class="flex justify-between items-center px-2">
+                    <a href="/categories/lights"><span>Lights</span></a>
+                  </div>
+                </div>
+                <div class="w-full hover:bg-gray-200 px-2 py-2">
+                  <div class="flex justify-between items-center px-2">
+                    <a href="/categories/kitchen-appliances"
+                      ><span>Kitchen Appliances</span></a
+                    >
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="w-full hover:bg-gray-200 px-2 py-2">
+              <div class="flex justify-between items-center px-2">
+                <span>Charger &amp; Cables</span
+                ><span
+                  class="cursor-pointer transition-all text-orange text-2xl"
+                  >▾</span
+                >
+              </div>
+              <div class="h-0 overflow-hidden">
+                <div class="w-full hover:bg-gray-200 px-2 py-2">
+                  <div class="flex justify-between items-center px-2">
+                    <a href="/categories/adapters"><span>Adapters</span></a>
+                  </div>
+                </div>
+                <div class="w-full hover:bg-gray-200 px-2 py-2">
+                  <div class="flex justify-between items-center px-2">
+                    <a href="/categories/cables"><span>Cables</span></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="w-full hover:bg-gray-200 px-2 py-2">
+              <div class="flex justify-between items-center px-2">
+                <a href="/categories/powerbanks"><span>Powerbanks</span></a>
+              </div>
+            </div>
+            <div class="w-full hover:bg-gray-200 px-2 py-2">
+              <div class="flex justify-between items-center px-2">
+                <span>Network Components</span
+                ><span
+                  class="cursor-pointer transition-all text-orange text-2xl"
+                  >▾</span
+                >
+              </div>
+              <div class="h-0 overflow-hidden">
+                <div class="w-full hover:bg-gray-200 px-2 py-2">
+                  <div class="flex justify-between items-center px-2">
+                    <a href="/categories/routers"><span>Routers</span></a>
+                  </div>
+                </div>
+                <div class="w-full hover:bg-gray-200 px-2 py-2">
+                  <div class="flex justify-between items-center px-2">
+                    <a href="/categories/amplifiers"><span>Amplifiers</span></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="w-full hover:bg-gray-200 px-2 py-2">
+              <div class="flex justify-between items-center px-2">
+                <span>Health &amp; Outdoors</span
+                ><span
+                  class="cursor-pointer transition-all text-orange text-2xl"
+                  >▾</span
+                >
+              </div>
+              <div class="h-0 overflow-hidden">
+                <div class="w-full hover:bg-gray-200 px-2 py-2">
+                  <div class="flex justify-between items-center px-2">
+                    <a href="/categories/backpacks"><span>Backpacks</span></a>
+                  </div>
+                </div>
+                <div class="w-full hover:bg-gray-200 px-2 py-2">
+                  <div class="flex justify-between items-center px-2">
+                    <a href="/categories/smart-scales"
+                      ><span>Smart Scales</span></a
+                    >
+                  </div>
+                </div>
+                <div class="w-full hover:bg-gray-200 px-2 py-2">
+                  <div class="flex justify-between items-center px-2">
+                    <a href="/categories/outdoors"><span>Outdoors</span></a>
+                  </div>
+                </div>
+                <div class="w-full hover:bg-gray-200 px-2 py-2">
+                  <div class="flex justify-between items-center px-2">
+                    <a href="/categories/masks"><span>Masks</span></a>
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
-          <div
-            class="absolute inset-y-0 right-0 flex items-center pr-2 sm:static sm:inset-auto sm:ml-6 sm:pr-0"
-            href="/_search"
-          >
-            <div class="block lg:inline-block">
-              <svg
-                stroke="currentColor"
-                fill="none"
-                stroke-width="2"
-                viewBox="0 0 24 24"
-                stroke-linecap="round"
-                stroke-linejoin="round"
-                class="text-3xl"
-                height="1em"
-                width="1em"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <circle cx="11" cy="11" r="8"></circle>
-                <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
-              </svg>
+          <div class="mt-3">
+            <h2 class="mx-4 text-xl font-medium text-center text-orange">
+              Hot Menus
+            </h2>
+            <div class="mx-4">
+              <ul class="p-1.5 border-b list-none">
+                <a href="/campaigns"><li>Campaigns</li></a>
+              </ul>
+            </div>
+            <div class="mx-4">
+              <ul class="p-1.5 border-b list-none">
+                <a href="/trending"><li>Trending</li></a>
+              </ul>
+            </div>
+            <div class="mx-4">
+              <ul class="p-1.5 border-b list-none">
+                <a href="/brands"><li>Brands</li></a>
+              </ul>
+            </div>
+            <div class="mx-4">
+              <ul class="p-1.5 border-b list-none">
+                <a href="/outlets"><li>Our Outlets</li></a>
+              </ul>
+            </div>
+            <div class="mx-4">
+              <ul class="p-1.5 border-b list-none">
+                <a href="/service-center"><li>Service Center</li></a>
+              </ul>
             </div>
           </div>
         </div>
       </div>
-    </nav>
+    </div>
+
+    <script src="js/main.js"></script>
   </body>
 </html>

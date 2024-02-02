@@ -15,6 +15,9 @@ body {
   --deep-primary-color: #ff5722;
   --hover-orange-color: #e66e19;
   --footer-color: #18253a;
+
+  /* ==== */
+  --tw-drop-shadow: drop-shadow(0 25px 25px rgba(0, 0, 0, 0.15));
 }
 
 .container {
@@ -189,4 +192,32 @@ body {
 
 .left-20 {
   left: 5rem;
+}
+
+.visible {
+  visibility: visible;
+}
+/* .drop-shadow-2xl {
+  background: #e0e0e0;
+  box-shadow: 20px 20px 60px #bebebe, -20px -20px 60px #ffffff;
+} */
+.bn-tab {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  justify-content: center;
+  width: 25%;
+}
+
+/* .hidden {
+  display: none;
+}
+
+.visible {
+  display: block;
+} */
+
+#categoriesLeftSide {
+  left: -100%;
 }

@@ -29,6 +29,697 @@
     <link rel="stylesheet" href="css/main.css" />
   </head>
   <body>
+    <header class="hidden">
+      <!-- Header top start  -->
+      <div class="flex flex-row justify-between items-center container py-2">
+        <div>
+          <h4 class="text-sm font-semibold">
+            Biggest Smart Gadget & SmartPhone Collection
+          </h4>
+        </div>
+        <div>
+          <ul
+            class="flex flex-row justify-center items-center text-sm cursor-pointer"
+          >
+            <li>
+              Call us
+              <span class="text-[#5F57E7] font-semibold">+8801925460460</span>
+              <span class="px-1">|</span>
+            </li>
+            <li>My Account <span class="px-1">|</span></li>
+            <li class="hover:text-[#F29120]">Retailer Request</li>
+          </ul>
+        </div>
+      </div>
+      <hr class="w-full border-1 border-gray-200" />
+      <!-- Navbar section start  -->
+      <div
+        class="container flex flex-row justify-between items-center mb-8 mt-6"
+      >
+        <div>
+          <img src="image/logo.jpg" alt="logo" />
+        </div>
+        <div>
+          <i class="bx bx-menu"></i>
+        </div>
+        <!-- nav bar -->
+        <div>
+          <ul class="flex flex-row justify-center items-center gap-5">
+            <li><a href="#">Campaign</a></li>
+            <li><a href="#">Trending</a></li>
+            <li><a href="#">Brands</a></li>
+            <li><a href="#">Our Outlets</a></li>
+            <li><a href="#">Service Center</a></li>
+          </ul>
+        </div>
+        <div>
+          <input
+            class="rounded-full ring-0 focus:ring-0 py-2 px-1 outline-none placeholder-[#808080] pl-4"
+            type="text"
+            placeholder="Search for Product"
+            style="border: 1px solid #f29120"
+          />
+        </div>
+        <div>
+          <ul class="flex flex-row justify-center items-center gap-4">
+            <li>
+              <a href="#"><i class="bx bx-heart"></i></a>
+            </li>
+            <li>
+              <a href="#"><i class="bx bx-user"></i></a>
+            </li>
+            <li>
+              <a href="#"><i class="bx bx-cart"></i></a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </header>
+
+    <header class="mb-[120px]">
+      <!-- large header  -->
+      <div class="hidden xl:block">
+        <div
+          class="bg-white fixed inset-x-0 top-0 z-[100] shadow-lg h-[7.5rem]"
+        >
+          <section
+            class="xl:w-full xl:max-w-[1188px] mx-2 md:mx-10 lg:mx-20 xl:mx-auto"
+          >
+            <div
+              class="flex flex-col md:flex-row lg:justify-between 2xl:justify-between items-center h-10"
+            >
+              <div>
+                <p class="text-sm lg:text-xs 2xl:text-sm font-semibold">
+                  Biggest Smart Gadget &amp; SmartPhone Collection
+                </p>
+              </div>
+              <div class="flex flex-row items-center space-x-2 mt-3 md:mt-0">
+                <span
+                  class="text-sm lg:text-xs 2xl:text-sm font-medium cursor-pointer"
+                  >Call us<!-- -->
+                  <a
+                    href="tel:+8801925460460"
+                    class="text-indigo-600 font-semibold text-sm lg:text-xs 2xl:text-sm"
+                    >+8801925460460</a
+                  ></span
+                ><span class="text-[#000000] opacity-[0.3]">|</span
+                ><a aria-label="user profile link" href="/user/profile"
+                  ><span
+                    class="text-sm cursor-pointer hover:text-orange undefined"
+                    >My Account</span
+                  ></a
+                >
+                <div class="ml-3 relative" data-headlessui-state="">
+                  <div>
+                    <button
+                      aria-label="User"
+                      class="bg-white flex text-sm rounded-full focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-white"
+                      id="headlessui-menu-button-1"
+                      type="button"
+                      aria-haspopup="menu"
+                      aria-expanded="false"
+                      data-headlessui-state=""
+                    >
+                      <span class="text-sm"></span>
+                    </button>
+                  </div>
+                </div>
+                <span class="text-[#000000] opacity-[0.3]">|</span
+                ><a href="retailer-request.html"
+                  ><span class="text-sm cursor-pointer hover:text-orange"
+                    >Retailer Request</span
+                  ></a
+                >
+              </div>
+            </div>
+          </section>
+          <hr class="w-full" />
+          <section
+            class="xl:w-full xl:max-w-[1188px] mx-2 md:mx-10 lg:mx-20 xl:mx-auto"
+          >
+            <div class="flex justify-between m-auto items-center mt-1">
+              <a href="/">
+                <img src="image/logo.jpg" alt="" />
+              </a>
+
+              <div class="group inline-block relative group -mb-2">
+                <span><img src="image/header/breadcrumb.svg" alt="" /></span>
+
+                <!-- ===== category menu ===== -->
+                <ul
+                  class="absolute invisible group-hover:visible text-gray-700 pt-4 w-52 rounded-md shadow-md bg-white"
+                >
+                  <div
+                    class="w-full h-full text-[13px] bg-white border transform group-hover:scale-100 transition duration-150 ease-in-out origin-top relative z-0 list-none"
+                  >
+                    <a href="" class="relative group2 bg-red-100">
+                      <ul>
+                        <li
+                          class="rounded-sm relative px-3 mx-1 py-1 hover:rounded border-b"
+                        >
+                          Smart Watches
+                        </li>
+                        <ul
+                          class="absolute top-[13px] left-[207px] invisible group2-hover:visible bg-white border rounded-r-lg transition duration-500 origin-top-left w-[200px] list-none"
+                        >
+                          <li
+                            class="rounded-sm py-1 px-3 mx-2 mt-1 hover:bg-gray-100 hover:rounded cursor-pointer border-b"
+                          >
+                            Amazfit
+                          </li>
+                          <li
+                            class="rounded-sm py-1 px-3 mx-2 hover:bg-gray-100 hover:rounded cursor-pointer border-b"
+                          >
+                            Haylou
+                          </li>
+                          <li
+                            class="rounded-sm py-1 px-3 mx-2 hover:bg-gray-100 hover:rounded cursor-pointer border-b"
+                          >
+                            Xiaomi
+                          </li>
+                          <li
+                            class="rounded-sm py-1 px-3 mx-2 hover:bg-gray-100 hover:rounded cursor-pointer border-b"
+                          >
+                            Oneplus
+                          </li>
+                          <li
+                            class="rounded-sm py-1 px-3 mx-2 hover:bg-gray-100 hover:rounded cursor-pointer border-b"
+                          >
+                            Imilab
+                          </li>
+                          <li
+                            class="rounded-sm py-1 px-3 mx-2 hover:bg-gray-100 hover:rounded cursor-pointer border-b"
+                          >
+                            Honor
+                          </li>
+                          <li
+                            class="rounded-sm py-1 px-3 mx-2 hover:bg-gray-100 hover:rounded cursor-pointer border-b"
+                          >
+                            Mibro
+                          </li>
+                          <li
+                            class="rounded-sm py-1 px-3 mx-2 hover:bg-gray-100 hover:rounded cursor-pointer border-b"
+                          >
+                            Lenovo
+                          </li>
+                          <li
+                            class="rounded-sm py-1 px-3 mx-2 hover:bg-gray-100 hover:rounded cursor-pointer border-b"
+                          >
+                            Realme
+                          </li>
+                          <li
+                            class="rounded-sm py-1 px-3 mx-2 hover:bg-gray-100 hover:rounded cursor-pointer border-b"
+                          >
+                            TicWatch
+                          </li>
+                          <li
+                            class="rounded-sm py-1 px-3 mx-2 hover:bg-gray-100 hover:rounded cursor-pointer border-b"
+                          >
+                            Kieslect
+                          </li>
+                          <li
+                            class="rounded-sm py-1 px-3 mx-2 hover:bg-gray-100 hover:rounded cursor-pointer border-b"
+                          >
+                            WiWU
+                          </li>
+                          <li
+                            class="rounded-sm py-1 px-3 mx-2 hover:bg-gray-100 hover:rounded cursor-pointer border-b"
+                          >
+                            G-Tide
+                          </li>
+                          <li
+                            class="rounded-sm py-1 px-3 mx-2 hover:bg-gray-100 hover:rounded cursor-pointer border-b"
+                          >
+                            Xinji
+                          </li>
+                          <li
+                            class="rounded-sm py-1 px-3 mx-2 hover:bg-gray-100 hover:rounded cursor-pointer border-b"
+                          >
+                            Apple
+                          </li>
+                          <li
+                            class="rounded-sm py-1 px-3 mx-2 hover:bg-gray-100 hover:rounded cursor-pointer border-b"
+                          >
+                            Noise
+                          </li>
+                          <li
+                            class="rounded-sm py-1 px-3 mx-2 hover:bg-gray-100 hover:rounded cursor-pointer border-b"
+                          >
+                            Imiki
+                          </li>
+                        </ul>
+                      </ul>
+                    </a>
+                    <a href="" class="relative group2 bg-red-100">
+                      <ul>
+                        <li
+                          class="rounded-sm relative px-3 mx-1 py-1 hover:rounded border-b"
+                        >
+                          Smart Phones
+                        </li>
+
+                        <ul
+                          class="absolute top-[13px] left-[207px] invisible group2-hover:visible bg-white border rounded-r-lg transition duration-500 origin-top-left w-[200px] list-none"
+                        >
+                          <li
+                            class="rounded-sm py-1 px-3 mx-2 mt-1 hover:bg-gray-100 hover:rounded cursor-pointer border-b"
+                          >
+                            Infinix
+                          </li>
+                          <li
+                            class="rounded-sm py-1 px-3 mx-2 hover:bg-gray-100 hover:rounded cursor-pointer border-b"
+                          >
+                            Samsung
+                          </li>
+                          <li
+                            class="rounded-sm py-1 px-3 mx-2 hover:bg-gray-100 hover:rounded cursor-pointer border-b"
+                          >
+                            Realme
+                          </li>
+                        </ul>
+                      </ul>
+                    </a>
+                    <a href="" class="relative group2 bg-red-100">
+                      <ul>
+                        <li
+                          class="rounded-sm relative px-3 mx-1 py-1 hover:rounded border-b"
+                        >
+                          Headphones
+                        </li>
+
+                        <ul
+                          class="absolute top-[13px] left-[207px] invisible group2-hover:visible bg-white border rounded-r-lg transition duration-500 origin-top-left w-[200px] list-none"
+                        >
+                          <li
+                            class="rounded-sm py-1 px-3 mx-2 mt-1 hover:bg-gray-100 hover:rounded cursor-pointer border-b"
+                          >
+                            True Wireless Earbuds
+                          </li>
+                          <li
+                            class="rounded-sm py-1 px-3 mx-2 hover:bg-gray-100 hover:rounded cursor-pointer border-b"
+                          >
+                            Bluetooth Headphones
+                          </li>
+                          <li
+                            class="rounded-sm py-1 px-3 mx-2 hover:bg-gray-100 hover:rounded cursor-pointer border-b"
+                          >
+                            Wired Headphones
+                          </li>
+                        </ul>
+                      </ul>
+                    </a>
+                    <a href="" class="relative group2 bg-red-100">
+                      <ul>
+                        <li
+                          class="rounded-sm relative px-3 mx-1 py-1 hover:rounded border-b"
+                        >
+                          Smart TV &amp; Accessories
+                        </li>
+
+                        <ul
+                          class="absolute top-[13px] left-[207px] invisible group2-hover:visible bg-white border rounded-r-lg transition duration-500 origin-top-left w-[200px] list-none"
+                        >
+                          <li
+                            class="rounded-sm py-1 px-3 mx-2 mt-1 hover:bg-gray-100 hover:rounded cursor-pointer border-b"
+                          >
+                            Android Smart TVs
+                          </li>
+                          <li
+                            class="rounded-sm py-1 px-3 mx-2 hover:bg-gray-100 hover:rounded cursor-pointer border-b"
+                          >
+                            Android TV Boxes
+                          </li>
+                          <li
+                            class="rounded-sm py-1 px-3 mx-2 hover:bg-gray-100 hover:rounded cursor-pointer border-b"
+                          >
+                            TV Accessories
+                          </li>
+                        </ul>
+                      </ul>
+                    </a>
+                    <a href="" class="relative group2 bg-red-100">
+                      <ul>
+                        <li
+                          class="rounded-sm relative px-3 mx-1 py-1 hover:rounded border-b"
+                        >
+                          Computer &amp; Accessories
+                        </li>
+
+                        <ul
+                          class="absolute top-[13px] left-[207px] invisible group2-hover:visible bg-white border rounded-r-lg transition duration-500 origin-top-left w-[200px] list-none"
+                        >
+                          <li
+                            class="rounded-sm py-1 px-3 mx-2 mt-1 hover:bg-gray-100 hover:rounded cursor-pointer border-b"
+                          >
+                            Computer Monitors
+                          </li>
+                          <li
+                            class="rounded-sm py-1 px-3 mx-2 hover:bg-gray-100 hover:rounded cursor-pointer border-b"
+                          >
+                            Keyboards &amp; Mouses
+                          </li>
+                          <li
+                            class="rounded-sm py-1 px-3 mx-2 hover:bg-gray-100 hover:rounded cursor-pointer border-b"
+                          >
+                            Computer Accessories
+                          </li>
+                        </ul>
+                      </ul>
+                    </a>
+                    <a href="" class="relative group2 bg-red-100">
+                      <ul>
+                        <li
+                          class="rounded-sm relative px-3 mx-1 py-1 hover:rounded border-b"
+                        >
+                          Wireless Speakers
+                        </li>
+
+                        <ul
+                          class="absolute top-[13px] left-[207px] invisible group2-hover:visible bg-white border rounded-r-lg transition duration-500 origin-top-left w-[200px] list-none"
+                        >
+                          <li
+                            class="rounded-sm py-1 px-3 mx-2 mt-1 hover:bg-gray-100 hover:rounded cursor-pointer border-b"
+                          >
+                            Soundbars
+                          </li>
+                          <li
+                            class="rounded-sm py-1 px-3 mx-2 mt-1 hover:bg-gray-100 hover:rounded cursor-pointer border-b"
+                          >
+                            Bluetooth Speakers
+                          </li>
+                        </ul>
+                      </ul>
+                    </a>
+                    <a href="" class="relative group2 bg-red-100">
+                      <ul>
+                        <li
+                          class="rounded-sm relative px-3 mx-1 py-1 hover:rounded hover:bg-gray-100 border-b"
+                        >
+                          Security Cameras
+                        </li>
+                      </ul>
+                    </a>
+                    <a href="" class="relative group2 bg-red-100">
+                      <ul>
+                        <li
+                          class="rounded-sm relative px-3 mx-1 py-1 hover:rounded border-b"
+                        >
+                          Smart Home Appliances
+                        </li>
+
+                        <ul
+                          class="absolute top-[13px] left-[207px] invisible group2-hover:visible bg-white border rounded-r-lg transition duration-500 origin-top-left w-[200px] list-none"
+                        >
+                          <li
+                            class="rounded-sm py-1 px-3 mx-2 mt-1 hover:bg-gray-100 hover:rounded cursor-pointer border-b"
+                          >
+                            Air Purifiers
+                          </li>
+                          <li
+                            class="rounded-sm py-1 px-3 mx-2 hover:bg-gray-100 hover:rounded cursor-pointer border-b"
+                          >
+                            Fans
+                          </li>
+                          <li
+                            class="rounded-sm py-1 px-3 mx-2 hover:bg-gray-100 hover:rounded cursor-pointer border-b"
+                          >
+                            Lights
+                          </li>
+                          <li
+                            class="rounded-sm py-1 px-3 mx-2 hover:bg-gray-100 hover:rounded cursor-pointer border-b"
+                          >
+                            Kitchen Appliances
+                          </li>
+                        </ul>
+                      </ul>
+                    </a>
+                    <a href="" class="relative group2 bg-red-100">
+                      <ul>
+                        <li
+                          class="rounded-sm relative px-3 mx-1 py-1 hover:rounded border-b"
+                        >
+                          Charger &amp; Cables
+                        </li>
+
+                        <ul
+                          class="absolute top-[13px] left-[207px] invisible group2-hover:visible bg-white border rounded-r-lg transition duration-500 origin-top-left w-[200px] list-none"
+                        >
+                          <li
+                            class="rounded-sm py-1 px-3 mx-2 mt-1 hover:bg-gray-100 hover:rounded cursor-pointer border-b"
+                          >
+                            Adapters
+                          </li>
+                          <li
+                            class="rounded-sm py-1 px-3 mx-2 hover:bg-gray-100 hover:rounded cursor-pointer border-b"
+                          >
+                            Cables
+                          </li>
+                        </ul>
+                      </ul>
+                    </a>
+                    <a href="" class="relative group2 bg-red-100">
+                      <ul>
+                        <li
+                          class="rounded-sm relative px-3 mx-1 py-1 hover:rounded hover:bg-gray-100 border-b"
+                        >
+                          Powerbanks
+                        </li>
+                      </ul>
+                    </a>
+                    <a href="" class="relative group2 bg-red-100">
+                      <ul>
+                        <li
+                          class="rounded-sm relative px-3 mx-1 py-1 hover:rounded border-b"
+                        >
+                          Network Components
+                        </li>
+
+                        <ul
+                          class="absolute top-[13px] left-[207px] invisible group2-hover:visible bg-white border rounded-r-lg transition duration-500 origin-top-left w-[200px] list-none"
+                        >
+                          <li
+                            class="rounded-sm py-1 px-3 mx-2 mt-1 hover:bg-gray-100 hover:rounded cursor-pointer border-b"
+                          >
+                            Routers
+                          </li>
+                          <li
+                            class="rounded-sm py-1 px-3 mx-2 hover:bg-gray-100 hover:rounded cursor-pointer border-b"
+                          >
+                            Amplifiers
+                          </li>
+                        </ul>
+                      </ul>
+                    </a>
+                    <a href="" class="relative group2 bg-red-100">
+                      <ul>
+                        <li
+                          class="rounded-sm relative px-3 mx-1 py-1 hover:rounded border-b"
+                        >
+                          Health &amp; Outdoors
+                        </li>
+
+                        <ul
+                          class="absolute top-[13px] left-[207px] invisible group2-hover:visible bg-white border rounded-r-lg transition duration-500 origin-top-left w-[200px] list-none"
+                        >
+                          <li
+                            class="rounded-sm py-1 px-3 mx-2 mt-1 hover:bg-gray-100 hover:rounded cursor-pointer border-b"
+                          >
+                            Backpacks
+                          </li>
+                          <li
+                            class="rounded-sm py-1 px-3 mx-2 hover:bg-gray-100 hover:rounded cursor-pointer border-b"
+                          >
+                            Smart Scales
+                          </li>
+                          <li
+                            class="rounded-sm py-1 px-3 mx-2 hover:bg-gray-100 hover:rounded cursor-pointer border-b"
+                          >
+                            Outdoors
+                          </li>
+                          <li
+                            class="rounded-sm py-1 px-3 mx-2 hover:bg-gray-100 hover:rounded cursor-pointer border-b"
+                          >
+                            Masks
+                          </li>
+                        </ul>
+                      </ul>
+                    </a>
+                  </div>
+                </ul>
+              </div>
+
+              <a href="/campaigns"
+                ><div
+                  class="font-medium text-sm hover:text-orange hover:font-semibold cursor-pointer"
+                >
+                  <span>Campaign</span>
+                </div></a
+              ><a href="/trending"
+                ><div
+                  class="font-medium text-sm hover:text-orange hover:font-semibold cursor-pointer"
+                >
+                  <span>Trending</span>
+                </div></a
+              ><a href="/brands"
+                ><div
+                  class="font-medium text-sm hover:text-orange hover:font-semibold cursor-pointer"
+                >
+                  <span>Brands</span>
+                </div></a
+              ><a href="/outlets"
+                ><div
+                  class="font-medium text-sm hover:text-orange hover:font-semibold cursor-pointer"
+                >
+                  <span>Our Outlets</span>
+                </div></a
+              ><a href="/service-center"
+                ><div
+                  class="font-medium text-sm hover:text-orange hover:font-semibold cursor-pointer"
+                >
+                  <span>Service Center</span>
+                </div></a
+              >
+              <div>
+                <form class="relative">
+                  <div
+                    class="relative h-6 lg:h-8 border-2 border-[#F29120] rounded-full shadow flex"
+                  >
+                    <input
+                      type="text"
+                      name="searchText"
+                      placeholder="Search for products"
+                      class="rounded-full ring-0 border-0 focus:ring-0 py-2 px-4 outline-none placeholder-[#808080] pl-8"
+                    />
+                    <div class="flex justify-center items-center">
+                      <span
+                        class="flex justify-center items-center py-2 px-6 h-6 lg:h-8 false cursor-pointe"
+                      >
+                        <i class="bx bx-search text-[#f19020]"></i>
+                      </span>
+                    </div>
+                  </div>
+                  <div
+                    class="z-50 absolute top-8 bg-gray-100 w-full lg:w-[23rem] xl:w-[19rem] 2xl:w-full rounded-xl"
+                  ></div>
+                </form>
+              </div>
+              <div class="flex justify-between space-x-3 items-center">
+                <a href="/user/profile/wishlist">
+                  <div title="wishlist" class="w-[20px] h-[20px]">
+                    <img
+                      class="w-full h-full object-fit cursor-pointer"
+                      src="image/header/wishlist.svg"
+                      alt=""
+                    />
+                  </div>
+                </a>
+                <a href="/user/profile">
+                  <div
+                    title="profile"
+                    class="cursor-pointer undefined ml-2 w-[20px] h-[20px]"
+                  >
+                    <img
+                      class="w-full h-full object-fit cursor-pointer"
+                      src="image/header/profile.svg"
+                      alt=""
+                    /></div
+                ></a>
+                <a href="/user/profile">
+                  <div
+                    title="cart"
+                    class="cursor-pointer undefined ml-2 w-[20px] h-[20px]"
+                  >
+                    <img
+                      id="openCartIcon"
+                      class="w-full h-full object-fit cursor-pointer"
+                      src="image/header/cart.svg"
+                      alt=""
+                    /></div
+                ></a>
+              </div>
+            </div>
+          </section>
+        </div>
+      </div>
+      <!-- small nambar    -->
+      <div class="block xl:hidden">
+        <nav class="bg-white z-20 h-20 shadow-xl fixed top-0 inset-x-0">
+          <div class="mx-auto px-2 sm:px-6 lg:px-8">
+            <div class="relative flex items-center justify-between h-20">
+              <div class="absolute inset-y-0 left-0 flex items-center">
+                <button
+                  class="inline-flex items-center justify-center p-2 rounded-md focus:outline-none"
+                  id="headlessui-disclosure-button-6"
+                  type="button"
+                >
+                  <span><i class="bx bx-menu-alt-left"></i></span>
+                </button>
+              </div>
+              <div class="flex-1 flex items-center justify-center">
+                <div class="flex-shrink-0 flex items-center">
+                  <a href="#">
+                    <img src="image/motionview-nav.webp" alt="" />
+                  </a>
+                </div>
+              </div>
+              <div
+                class="absolute inset-y-0 right-0 flex items-center pr-2 sm:static sm:inset-auto sm:ml-6 sm:pr-0"
+                href="/_search"
+              >
+                <div class="block lg:inline-block">
+                  <svg
+                    stroke="currentColor"
+                    fill="none"
+                    stroke-width="2"
+                    viewBox="0 0 24 24"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    class="text-3xl"
+                    height="1em"
+                    width="1em"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <circle cx="11" cy="11" r="8"></circle>
+                    <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+                  </svg>
+                </div>
+              </div>
+            </div>
+          </div>
+        </nav>
+      </div>
+
+      <!-- bottom navabar  -->
+      <div class="visible">
+        <div class="xl:hidden">
+          <div
+            class="bottom-nav fixed inset-x-6 md:inset-x-20 bottom-0 mb-4 h-16 flex justify-center bg-white shadow-2xl rounded-xl z-[999] border-2 border-[#f19020]"
+          >
+            <div class="bn-tab">
+              <span><i class="bx bx-home-alt"></i></span>
+              <small class="text-xs text-[#FF5722]">Home</small>
+            </div>
+            <div class="bn-tab">
+              <span><img src="image/header/wishlist.svg" alt="" /></span>
+              <small class="text-xs text-black">Wishlist</small>
+            </div>
+            <div class="bn-tab">
+              <span><img src="image/header/profile.svg" alt="" /></span>
+              <small class="text-xs text-black">Profile</small>
+            </div>
+            <div class="bn-tab relative">
+              <span><img src="image/header/cart.svg" alt="" /></span>
+              <small class="text-xs text-black">Cart</small
+              ><span
+                class="absolute right-6 md:right-14 lg:right-20 top-3 md:top-2 rounded-full bg-indigo-500 w-4 h-4 p-0 m-0 text-white font-mono text-sm leading-tight text-center"
+                >1</span
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+
     <div class="container">
       <form class="bg-white rounded-2xl shadow-2xl p-6 my-40">
         <h1 class="text-lg text-[#132339] font-semibold">
@@ -269,6 +960,130 @@
           </button>
         </div>
       </form>
+    </div>
+
+    <!-- Footer start  -->
+    <div class="py-3 text-white" style="background-color: var(--footer-color)">
+      <div class="container">
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 p-4">
+          <div class="md:col-span-2 lg:col-span-1 p-4">
+            <div>
+              <img src="image/logo.jpg" alt="" />
+            </div>
+            <p class="my-6 text-white text-justify text-sm">
+              Motion View is the largest Eco Product importer and Distributor in
+              Bangladesh and now holds the leading position in the ecosystem
+              industry.
+            </p>
+            <div class="flex flex-col lg:flex-row items-center gap-4">
+              <img
+                class="w-full lg:w-[160px] h-full lg:h-[62px] object-fit cursor-pointer"
+                src="image/Footer/app-store.webp"
+                alt=""
+              />
+              <img
+                class="w-full lg:w-[160px] h-full lg:h-[62px] object-fit cursor-pointer"
+                src="image/Footer/play-store.webp"
+                alt=""
+              />
+            </div>
+            <ul class="flex flex-row items-center gap-4 mt-4">
+              <li>
+                <a class="" href="#"
+                  ><i
+                    class="text-[30px] cursor-pointe bx bxl-facebook-circle"
+                  ></i
+                ></a>
+              </li>
+              <li>
+                <a class="" href="#"
+                  ><i class="text-[30px] cursor-pointe bx bxl-twitter"></i
+                ></a>
+              </li>
+              <li>
+                <a class="" href="#"
+                  ><i class="text-[30px] cursor-pointe bx bxl-instagram"></i
+                ></a>
+              </li>
+              <li>
+                <a class="" href="#"
+                  ><i class="text-[30px] cursor-pointe bx bxl-tiktok"></i
+                ></a>
+              </li>
+              <li>
+                <a class="" href="#"
+                  ><i class="text-[30px] cursor-pointe bx bxl-youtube"></i
+                ></a>
+              </li>
+            </ul>
+          </div>
+          <div class="md:col-span-2 lg:col-span-1 p-4">
+            <h4 class="text-lg font-semibold uppercase text-white">COMPANY</h4>
+            <ul>
+              <li class="hover:text-[#f19020] mt-2">
+                <a href="#">Support Center</a>
+              </li>
+              <li class="hover:text-[#f19020] mt-2">
+                <a href="#">Service Center</a>
+              </li>
+              <li class="hover:text-[#f19020] mt-2">
+                <a href="#">About Us</a>
+              </li>
+              <li class="hover:text-[#f19020] mt-2">
+                <a href="#">Contact Us</a>
+              </li>
+              <li class="hover:text-[#f19020] mt-2">
+                <a href="#">EMI Policy</a>
+              </li>
+              <li class="hover:text-[#f19020] mt-2">
+                <a href="#">Warranty Policy</a>
+              </li>
+              <li class="hover:text-[#f19020] mt-2">
+                <a href="#">Return & Refund Policy</a>
+              </li>
+              <li class="hover:text-[#f19020] mt-2">
+                <a href="#">Facebook Data Deletion Instructions</a>
+              </li>
+            </ul>
+          </div>
+          <div class="md:col-span-2 lg:col-span-1 p-4">
+            <h4 class="text-lg font-semibold uppercase text-white">Address</h4>
+            <div>
+              <div class="flex items-center gap-3 flex-row mt-2">
+                <img src="image/Footer/address-icon.svg" alt="" />
+                <div class="-mt-[20px]">
+                  <p class="mt-[44px]">
+                    10/25 (9th Commercial Floor), Eastern Plaza, 70 Bir Uttam
+                    C.R Datta Road, Hatirpool, Dhaka-1205
+                  </p>
+                </div>
+              </div>
+              <div class="flex items-center gap-3 flex-row mt-4">
+                <img src="image/Footer/phone.svg" alt="" />
+                <p>+8801709198065</p>
+              </div>
+              <div class="flex items-center gap-3 flex-row mt-4">
+                <img src="image/Footer/email.svg" alt="" />
+                <p>smshaown65@gmail.com</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- company loogo  -->
+        <div>
+          <img src="image/Footer/ssl_footer.webp" alt="" />
+        </div>
+        <hr class="border-1 border-gray-600 my-3" />
+        <div class="flex flex-row justify-between items-center mt-2">
+          <div>
+            <a href="#" class="mr-2 cursor-pointer">Terms & Conditions </a>
+            <a href="#" class="cursor-pointe"> Privacy Policy </a>
+          </div>
+          <div>
+            <p>2024 All Rights Reserved by Motion View</p>
+          </div>
+        </div>
+      </div>
     </div>
 
     <script src="js/main.js"></script>
